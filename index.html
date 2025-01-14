@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://framerusercontent.com/images/Lu5fsdEeWrruQ7gygzbRyYvH1s.png" />
   <meta name="twitter:image:alt"
     content="Duties team of senior designers passionate about good design, new technology, and innovative business solutions" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link href="https://framerusercontent.com/images/wZLtVgrGmBcGADlFSBsSpAKN7qQ.png" rel="icon"
     media="(prefers-color-scheme: dark)" />
   <link rel="canonical" href="https://www.duties.xyz/" />
@@ -31,9 +31,9 @@
 </head>
 
 <body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="#" aria-label="Duties home">
+  <header class="duties__header">
+    <nav aria-label="Main navigation" class="duties__nav">
+      <a href="#" aria-label="Duties home" class="duties__logo">
         <svg viewBox="0 0 24 24" fill="var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37))"
           xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
           <path
@@ -47,85 +47,94 @@
             fill="var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37))"></path>
         </svg>
       </a>
-      <menu>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">VENTURES</a></li>
-        <li><a href="#">CONTACT</a></li>
+      <menu class="duties__menu">
+        <li class="duties__menu-item"><a href="#" class="duties__menu-link">PROJECTS</a></li>
+        <li class="duties__menu-item"><a href="#" class="duties__menu-link">SERVICES</a></li>
+        <li class="duties__menu-item"><a href="#" class="duties__menu-link">VENTURES</a></li>
+        <li class="duties__menu-item"><a href="#" class="duties__menu-link">CONTACT</a></li>
       </menu>
     </nav>
-    <h1>Building bold brands for brave companies</h1>
+    <h1 class="duties__title">Building bold brands for brave companies</h1>
   </header>
   <main>
-    <section>
-      <div>
+    <section class="duties__intro">
+      <div class="duties__intro-content">
         <div>
-          <h2>DUTIES IS A DESIGN STUDIO AND VENTURE PARTNER</h2>
-          <p>WE HELP YOU:</p>
-          <ul>
-            <li>DEFINE YOUR STRATEGY</li>
-            <li>DESIGN YOUR IDENTITY</li>
-            <li>DEPLOY YOUR BRAND</li>
+          <h2 class="duties__intro-title">DUTIES IS A DESIGN STUDIO AND VENTURE PARTNER</h2>
+          <p class="duties__intro-subtitle">WE HELP YOU:</p>
+          <ul class="duties__intro-list">
+            <li class="duties__intro-item">DEFINE YOUR STRATEGY</li>
+            <li class="duties__intro-item">DESIGN YOUR IDENTITY</li>
+            <li class="duties__intro-item">DEPLOY YOUR BRAND</li>
           </ul>
         </div>
-        <div>
-          <span>OFF-DUTY</span>
-          <time datetime="01:51">01:51</time>
-          <address>Oslo, Norway</address>
+        <div class="duties__status">
+          <span class="duties__status-label">OFF-DUTY</span>
+          <time datetime="01:51" class="duties_status-time">01:51</time>
+          <address class="duties__status-location">Oslo, Norway</address>
         </div>
       </div>
-      <a href="#" aria-label="Featured Projects Neural Codex">
+      <a href="#" class="duties__project duties__project--neural-codex duties__project-link" aria-label="Featured Projects Neural Codex">
         <img src="https://framerusercontent.com/images/Pw1Ww9Vs6WAaSOZPENUDpoEXlAw.png"
           alt="Neural Codex: Bridging the Knowledge Gap"
+          class="duties__project-image"
           title="Neural Codex: Bridging the Knowledge Gap" loading="lazy" />
         <img src="https://framerusercontent.com/images/SLvIiIesvYaTpJXxorNaOUQYEc.png"
           alt="Neural Codex: A Public forum for AI Discourse"
+          class="duties__project-image"
           title="Neural Codex: A Public forum for AI Discourse" loading="lazy" />
         <div>
           <img src="https://framerusercontent.com/images/OZqqSASnsLbIPIgBIMnqJ1FbYk.png"
             alt="Neural Codex mobile app interface"
+            class="duties__project-image"
             title="Neural Codex mobile app interface" loading="lazy" />
       </a>
-      <div>
+      <div class="duties__project-info">
         <div>
-          <h3>NEURAL CODEX</h3>
-          <div>
-            <h4>SCOPE</h4>
-            <span>*</span>
-            <ul>
-              <li>Strategy, Naming, Brand, Digital</li>
-              <li>Strategy, Naming, Brand, Digital</li>
-              <li>Strategy, Naming, Brand, Digital</li>
+          <h3 class="duties__project-title">NEURAL CODEX</h3>
+          <div class="duties__project-scope">
+            <h4 class="duties__project-scope-title">SCOPE</h4>
+            <span class="duties__project-scope-separator">*</span>
+            <ul class="duties__project-scope-list">
+              <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+              <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+              <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
             </ul>
           </div>
         </div>
-        <a href="#"><i>D</i><span>VIEW PROJECT</span></a>
+        <a href="#" class="duties__project-cta"><i class="duties__about-cta-icon">D</i><span class="duties__project-cta-text">VIEW PROJECT</span></a>
       </div>
     </section>
     <section>
-      <a href="#" title="View People Made Machines project" aria-label="Featured project: People Made Machines">
-        <img src="https://framerusercontent.com/images/p1ww8xFVGX0G6zY646QhOkTi6o.png" alt="People Made Machines logo design" title="People Made Machines logo design" loading="lazy">
-        <img src="https://framerusercontent.com/images/XeP2l6OKyzWIXl2MGKDGVdu3M.png" alt="People Made Machines website mockup" title="People Made Machines website mockup" loading="lazy">
-        <img src="https://framerusercontent.com/images/9ljL0BIkMRcsEmfDlDTRqbeu4tA.png" alt="People Made Machines mobile app interface" title="People Made Machines mobile app interface" loading="lazy">
+      <a href="#" title="View People Made Machines project"
+      class="duties__project duties__project--made-machine duties__project-link"
+      aria-label="Featured project: People Made Machines">
+        <img src="https://framerusercontent.com/images/p1ww8xFVGX0G6zY646QhOkTi6o.png" alt="People Made Machines logo design" title="People Made Machines logo design" 
+        class="duties__project-image"
+        loading="lazy">
+        <img src="https://framerusercontent.com/images/XeP2l6OKyzWIXl2MGKDGVdu3M.png" alt="People Made Machines website mockup" title="People Made Machines website mockup" loading="lazy" class="duties__project-image">
+        
+        <img src="https://framerusercontent.com/images/9ljL0BIkMRcsEmfDlDTRqbeu4tA.png" alt="People Made Machines mobile app interface" title="People Made Machines mobile app interface" loading="lazy" class="duties__project-image">
       </a>
-      <div>
-        <h3>PEOPLE MADE MACHINES</h3>
-        <div>
-          <h4>SCOPE</h4>
-          <span>*</span>
-          <ul>
-            <li>Strategy, Naming, Brand, Digital</li>
-            <li>Strategy, Naming, Brand, Digital</li>
-            <li>Strategy, Naming, Brand, Digital</li>
+      <div duties__project-info>
+        <h3 class="duties__project-title">PEOPLE MADE MACHINES</h3>
+        <div class="duties__project-scope">
+          <h4 class="duties__project-scope-title">SCOPE</h4>
+          <span class="duties__project-scope-separator">*</span>
+          <ul class="duties__project-scope-list">
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
           </ul>
         </div>
-        <a href="#"><i>D</i><span>VIEW PROJECT</span></a>
+        <a href="#" class="duties__project-cta"><i class="duties__about-cta-icon">D</i><span class="duties__project-cta-text">VIEW PROJECT</span></a>
       </div>
     </section>
     <section>
-      <a href="#" title="View Figures project" aria-label="Featured project: Figures - Future-focused accounting partner">
+      <a href="#" title="View Figures project" class="duties__project duties__project--figures-project duties__project-link" aria-label="Featured project: Figures - Future-focused accounting partner">
         <img 
           src="https://framerusercontent.com/images/S43ctWcMYNQTFNA2CMishOQghc.png" 
+          class="duties__project-image"
           alt="Figures mobile website showcasing 'Your Future-Focused Accounting Partner' headline" 
           title="Figures mobile website showcasing 'Your Future-Focused Accounting Partner' headline"
           loading="lazy"
@@ -133,85 +142,86 @@
         <img 
           src="https://framerusercontent.com/images/HgyN8alp115oqGS0QUB5qYHa92c.png" 
           alt="Figures brand identity presentation and visual design system" 
+          class="duties__project-image"
           title="Figures brand identity presentation and visual design system"
           loading="lazy"
         >
         <img 
           src="https://framerusercontent.com/images/JegOXtrnZ8YRJJxVsI8cAyzBh4.png" 
           alt="Figures digital interface designs and brand applications" 
+          class="duties__project-image"
           title="Figures digital interface designs and brand applications"
           loading="lazy"
         >
       </a>      
-      <div>
-        <h3>
+      <div duties__project-info>
+        <h3 class="duties__project-title">
           FIGURES
         </h3>
-        <div>
-          <h4>SCOPE</h4>
-          <span>*</span>
-          <ul>
-            <li>Strategy, Naming, Brand, Digital</li>
-            <li>Strategy, Naming, Brand, Digital</li>
-            <li>Strategy, Naming, Brand, Digital</li>
+        <div class="duties__project-scope">
+          <h4 class="duties__project-scope-title">SCOPE</h4>
+          <span class="duties__project-scope-separator">*</span>
+          <ul class="duties__project-scope-list">
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
+            <li class="duties__project-scope-item">Strategy, Naming, Brand, Digital</li>
           </ul>
         </div>
-        <a href="#"><i>D</i><span>VIEW PROJECT</span></a>
+        <a href="#" class="duties__project-cta"><i class="duties__about-cta-icon">D</i><span class="duties__project-cta-text">VIEW PROJECT</span></a>
       </div>
     </section>
-    <section>
-      <h2>About</h2>
-      <div>
-        <p>We are a team of two senior designers united by a shared passion for good design, new technology and a better
+    <section class="duties__about">
+      <h2 class="duties__about-title">About</h2>
+      <div class="duties__about-content">
+        <p class="duties__about-text">We are a team of two senior designers united by a shared passion for good design, new technology and a better
           way of doing things.</p>
-        <p>We believe it is our duty to help businesses embrace the unconventional and equip them with outputs that
+        <p class="duties__about-text">We believe it is our duty to help businesses embrace the unconventional and equip them with outputs that
           drive outcomes.</p>
-        <a href="#"><i></i><span>VIEW SERVICES</span></a>
+          <a href="#" class="duties__about-cta"><i class="duties__about-cta-icon"></i><span class="duties__about-cta-text">VIEW SERVICES</span></a>
       </div>
-      <img src="https://framerusercontent.com/images/a1DfsDJS8wYskx4fqNFQBFVPBU.png" alt="Duties team at work" loading="lazy" title="Duties team at work">
+      <img src="https://framerusercontent.com/images/a1DfsDJS8wYskx4fqNFQBFVPBU.png" class="duties__about-image" alt="Duties team at work" loading="lazy" title="Duties team at work">
     </section>
   </main>
   <footer>
-    <section>
-      <header>
-        <h3>Currently:</h3>
-        <div>
-          <div></div>
-          <p>OFF-DUTY</p>
+    <section class="duties__footer-content">
+      <header class="duties__footer-header">
+        <h3 class="duites__footer-title">Currently:</h3>
+        <div class="duties__footer-status">
+          <div class="duties__footer-status-indicator"></div>
+          <p class="duties__footer-status-text">OFF-DUTY</p>
         </div>
       </header>
-      <section>
-        <address>
-          <a href="#">new(at)duties.xyz</a>
+      <section class="duties__footer-contact">
+        <address class="duties__footer-address">
+          <a href="#" class="duties__footer-link">new(at)duties.xyz</a>
         </address>
-        <address>
-          <a href="#">+47 960 45 353</a>
+        <address class="duties__footer-link">
+          <a href="#" class="duties__footer-link">+47 960 45 353</a>
         </address>
       </section>
-
-      <section>
-        <h3>Duties AS</h3>
-        <address>
-          <p>Prinsens gate 21</p>
-          <p>0157 Oslo</p>
-          <p>Norway</p>
+      <section class="duties__footer-location">>
+        <h3 class="duties__footer-location-title">Duties AS</h3>
+        <address class="duties__footer-address">
+          <p class="duties__footer-address-line">Prinsens gate 21</p>
+          <p class="duties__footer-address-line">0157 Oslo</p>
+          <p class="duties__footer-address-line">Norway</p>
         </address>
       </section>
 
       <footer>
-        <nav aria-label="Social media and additional links">
-          <manu>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Insights</a></li>
-            </menu>
+        <nav class="duties__footer-nav" aria-label="Social media and additional links">
+          <ul class="duties__footer-nav-list">
+            <li class="duties__footer-nav-item"><a href="#" class="duties__footer-nav-link">Linkedin</a></li>
+            <li class="duties__footer-nav-item"><a href="#" class="duties__footer-nav-link">Instagram</a></li>
+            <li class="duties__footer-nav-item"><a href="#" class="duties__footer-nav-link">Behance</a></li>
+            <li class="duties__footer-nav-item"><a href="#" class="duties__footer-nav-link">Shop</a></li>
+            <li class="duties__footer-nav-item"><a href="#" class="duties__footer-nav-link">Insights</a></li>
+          </ul>
         </nav>
-        <p>© duties</p>
+        <p class="duties__footer-copyright">© duties</p>
       </footer>
     </section>
-    <div aria-hidden="true" aria-label="Duties Logo">
+    <div aria-hidden="true" aria-label="Duties Logo" class="duties__footer-logo">
       <svg viewBox="0 0 1400 478" fill="var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37))"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -222,5 +232,4 @@
     </div>
   </footer>
 </body>
-
 </html>

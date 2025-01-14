@@ -1,0 +1,241 @@
+$color-primary: #252525;
+$color-background: #ffffff;
+$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  Arial, sans-serif;
+$font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+  Courier, monospace;
+$transition-standard: all 0.3s ease;
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 48px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-primary;
+  background-color: $color-background;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 2rem 0;
+}
+
+nav {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: $transition-standard;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+
+    li a {
+      font-family: $font-mono;
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 0.875rem;
+      transition: $transition-standard;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+main {
+  @include container;
+
+  section {
+    margin: 6rem 0;
+
+    &:first-child {
+      margin-top: 4rem;
+    }
+
+    > div {
+      display: grid;
+      gap: 2rem;
+
+      @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+.project-images {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: $transition-standard;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.scope {
+  h4 {
+    font-family: $font-mono;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    font-family: $font-mono;
+    font-size: 0.875rem;
+  }
+}
+
+footer {
+  @include container;
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+
+  section {
+    display: grid;
+    gap: 2rem;
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  address {
+    font-style: normal;
+    margin: 1rem 0;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      transition: $transition-standard;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  nav {
+    margin-top: 4rem;
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+  }
+
+  .logo-large {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.mono {
+  font-family: $font-mono;
+}
+
+.view-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: $font-mono;
+  text-decoration: none;
+  color: $color-primary;
+  margin-top: 2rem;
+  transition: $transition-standard;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  i {
+    font-style: normal;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
