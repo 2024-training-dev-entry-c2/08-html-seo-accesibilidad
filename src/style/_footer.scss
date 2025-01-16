@@ -1,0 +1,81 @@
+.duties {
+  &__footer {
+    padding: $padding-x;
+    font-family: "PP Neue Montreal Mono Medium", monospace;
+    font-feature-settings: "ss08", "ss07";
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+
+    &-separator {
+      height: 400px;
+      user-select: none;
+      width: 100%;
+    }
+
+    &-header {
+      display: flex;
+      gap: 6px;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+    }
+
+    &-status {
+      display: flex;
+      gap: 4px;
+
+      &-indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(9, 205, 9);
+        animation: opacity 2s infinite;
+        display: inline-block;
+        margin-top: 4px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 25px;
+      padding: $padding-x;
+      height: 112px;
+    }
+
+    &-address {
+      display: flex;
+      flex-direction: column;
+      font-style: normal;
+
+      a {
+        text-decoration: none;
+        color: $color-primary;
+      }
+    }
+
+    &-location {
+      &-title {
+        color: $color-primary;
+      }
+    }
+
+    &-nav {
+      &-list {
+        list-style: none;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $color-primary;
+      }
+    }
+
+    &-copyright {
+      font-size: 1.6rem;
+    }
+  }
+}

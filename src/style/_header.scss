@@ -1,0 +1,72 @@
+.duties {
+  &__header {
+    padding: $padding-x;
+  }
+
+  &__title {
+    font-family: "AS Therma";
+    font-size: 12.3rem;
+    padding-left: 10px;
+
+    &-separator {
+      height: clamp(280px, 245.517px + 9.1954vw, 400px);
+      user-select: none;
+    }
+  }
+
+  &__nav {
+    z-index: 10;
+    font-family: "PP Neue Montreal Mono Medium";
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 32%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-nav;
+      backdrop-filter: blur(32px);
+      border-radius: 1.6rem;
+    }
+
+    &-link {
+      text-decoration: none;
+
+      svg {
+        width: 24px;
+
+        &:hover {
+          animation: spin 1s linear;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 15px;
+
+    &-item {
+      list-style: none;
+      flex: 0 0 auto;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-primary;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

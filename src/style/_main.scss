@@ -1,0 +1,170 @@
+@import "./about";
+
+.duties {
+  &__intro {
+    &-content {
+      @include flex-center(row, space-between, flex-start, 7dvw);
+      width: 100%;
+      @include responsive-font-size(14px, 16px);
+      margin-bottom: 20px;
+      margin-left: 15px;
+
+      &-wrapper {
+        @include flex-center(row, flex-start, flex-start, $gap-large);
+        width: 60%;
+      }
+    }
+
+    &-title {
+      grid-column: 1 / span 2;
+      height: min-content;
+      padding-right: 40px;
+      white-space: nowrap;
+    }
+
+    &-helper {
+      @include flex-center(row, flex-start, flex-start, $gap-medium);
+    }
+
+    &-list {
+      list-style: none;
+    }
+  }
+
+  &__status {
+    width: 40%;
+    margin-right: 35px;
+    @include flex-center(column, flex-star, flex-end);
+
+    &-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $indicator-color;
+      animation: opacity 2s infinite;
+      display: inline-block;
+      margin: -2px 6px 0 0;
+    }
+
+    &-title {
+      padding-right: 5px;
+    }
+
+    &-wrapper {
+      @include flex-center(row);
+    }
+
+    &-opening {
+      @include flex-center(row, flex-start, flex-start, $gap-small);
+    }
+  }
+
+  &__project {
+    &-neural-codex,
+    &-made-machine,
+    &-figures-project {
+      gap: 15px;
+      width: 100%;
+
+      > img {
+        width: 100%;
+        border-radius: $border-radius;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    &-title {
+      font-family: $font-family-primary;
+      font-size: $font-size-large;
+      white-space: pre;
+      margin-left: 14px;
+    }
+
+    &-scope {
+      margin-top: -2dvh;
+      @include flex-center(row, flex-start, flex-start, $gap-small);
+      padding: 10px 0 0 30px;
+      white-space: pre;
+      box-sizing: border-box;
+      @include responsive-font-size(14px, 16px);
+      text-transform: uppercase;
+
+      &-separator {
+        aspect-ratio: 1 / 1;
+        height: 8px;
+        width: 8px;
+        background-color: $color-primary;
+        border-radius: 8px;
+        margin-top: 5px;
+      }
+
+      &-list {
+        @include flex-center(row, flex-start, flex-start, 20px);
+        white-space: nowrap;
+        list-style: none;
+        height: min-content;
+        background-color: $color-nav;
+
+        li {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.5em;
+            height: 0.5em;
+            background-color: $color-primary;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &-info {
+      @include flex-center(row, space-between);
+
+      &-wrapper {
+        @include flex-center(row, space-between);
+        width: 40%;
+
+        &-scope {
+          @include flex-center(row, start);
+        }
+      }
+    }
+
+    &-cta {
+      @include flex-center(row, flex-start, flex-start, 15px);
+      background-color: $color-primary;
+      color: $color-background;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: $border-radius;
+      font-size: 1.5rem;
+      height: fit-content;
+      margin-right: 15px;
+    }
+
+    &-neural-codex {
+      @include grid-template(1.4fr 2fr 1fr);
+    }
+
+    &-made-machine {
+      @include grid-template(1.9fr 1fr 1.3fr);
+    }
+
+    &-figures-project {
+      @include grid-template(1fr 2fr 1.3fr);
+    }
+  }
+
+  &__separator {
+    height: 350px;
+    user-select: none;
+    width: 100%;
+  }
+}

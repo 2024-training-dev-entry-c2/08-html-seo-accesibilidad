@@ -1,0 +1,28 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes background-hover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
