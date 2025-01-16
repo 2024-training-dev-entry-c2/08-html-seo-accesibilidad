@@ -1,8 +1,10 @@
 $color-primary: #252525;
-$color-background: #f1f0ee;
+$color-background: rgb(241, 240, 238);
 $background-color-about: rgb(241, 240, 238);
 $color-nav: rgba(194, 194, 191, 0.7);
 $indicator-color: rgb(9, 205, 9);
+$scope-color: rgb(238, 238, 238);
+$color-hover: rgb(53, 0, 246);
 
 $padding-x: 16px;
 
@@ -11,7 +13,7 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
 
-$font-family-primary: "AS Therma";
+$font-family-primary: "AS Therma Bold Condensed";
 $font-family-secondary: "PP Neue Montreal Mono Medium", sans-serif;
 
 $font-size-large: 5.3rem;

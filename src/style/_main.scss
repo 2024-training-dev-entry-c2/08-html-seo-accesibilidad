@@ -8,7 +8,6 @@
       @include responsive-font-size(14px, 16px);
       margin-bottom: 20px;
       margin-left: 15px;
-
       &-wrapper {
         @include flex-center(row, flex-start, flex-start, $gap-large);
         width: 60%;
@@ -18,12 +17,11 @@
     &-title {
       grid-column: 1 / span 2;
       height: min-content;
-      padding-right: 40px;
       white-space: nowrap;
     }
 
     &-helper {
-      @include flex-center(row, flex-start, flex-start, $gap-medium);
+      @include flex-center(row, flex-start, flex-start, 80px);
     }
 
     &-list {
@@ -71,56 +69,60 @@
         border-radius: $border-radius;
         object-fit: cover;
         height: 100%;
+        cursor: url("/cursor.svg"), auto;
+      }
+
+      &:hover {
+        cursor: url("/cursor.svg"), auto;
       }
     }
 
     &-title {
-      font-family: $font-family-primary;
-      font-size: $font-size-large;
+      font-family: "AS Therma Bold Condensed";
       white-space: pre;
       margin-left: 14px;
+      font-size: 5.3rem;
+      color: rgb(37, 37, 37);
+      letter-spacing: -0.06em;
+      line-height: 80%;
+      margin-top: 15px;
+      font-size: clamp(48px, 42.2529px + 1.53257vw, 68px);
     }
 
     &-scope {
       margin-top: -2dvh;
       @include flex-center(row, flex-start, flex-start, $gap-small);
       padding: 10px 0 0 30px;
-      white-space: pre;
-      box-sizing: border-box;
       @include responsive-font-size(14px, 16px);
       text-transform: uppercase;
+      position: relative;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
 
       &-separator {
-        aspect-ratio: 1 / 1;
         height: 8px;
         width: 8px;
         background-color: $color-primary;
         border-radius: 8px;
-        margin-top: 5px;
+      }
+
+      &-ticket {
+        overflow: hidden;
+        background-color: $scope-color;
+        width: 20dvw;
+
+        &-dot {
+          font-family: sans-serif;
+          font-size: 1.9rem;
+        }
       }
 
       &-list {
         @include flex-center(row, flex-start, flex-start, 20px);
-        white-space: nowrap;
         list-style: none;
-        height: min-content;
-        background-color: $color-nav;
-
-        li {
-          position: relative;
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: -20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0.5em;
-            height: 0.5em;
-            background-color: $color-primary;
-            border-radius: 50%;
-          }
-        }
+        cursor: pointer;
+        animation: ticker-animation 15s linear infinite;
       }
     }
 
@@ -142,11 +144,44 @@
       background-color: $color-primary;
       color: $color-background;
       text-decoration: none;
-      padding: 10px 15px;
-      border-radius: $border-radius;
+      padding: 7px 10px;
+      border-radius: 3px;
       font-size: 1.5rem;
       height: fit-content;
       margin-right: 15px;
+      border: none;
+      position: relative;
+
+      &-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      &:hover {
+        background-color: $color-hover;
+      }
+
+      &:hover .duties__project-cta-icon {
+        animation: moveRight 0.4s forwards;
+      }
+
+      &:hover .duties__project-cta-icon-clone {
+        animation: appear 0.4s forwards;
+      }
+
+      &-icon {
+        margin: auto 0;
+        width: 12px;
+        transition: transform 0.5s;
+      }
+      &-icon-clone {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: transform 0.5s, opacity 0.5s;
+      }
     }
 
     &-neural-codex {
