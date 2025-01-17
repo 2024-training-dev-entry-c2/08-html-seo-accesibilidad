@@ -1,0 +1,144 @@
+@use './styles/sass/reset.scss';
+@use './styles/footer.scss';
+@use './styles/header.scss';
+@use './styles/tools.scss';
+@use './styles/service.scss';
+@use './styles/template.scss';
+@use './styles/sass/mixins.scss' as mixins;
+@use './styles/sass/variables.scss' as variables;
+@use './styles/sass/herencias.scss';
+
+.main {
+    @include mixins.size(1252px, 100vh);
+    margin: 0px 188px;
+
+    .quote {
+        @include mixins.flex-style(column);
+        background-color: variables.$color-cards;
+        padding: 60px;
+        max-width: fit-content;
+        margin: auto;
+        transform: rotate(-3deg);
+        position: relative;
+        margin: 130px auto;
+
+        &__image {
+            @include mixins.position(absolute, auto, auto, 80%, 45%);
+            @include mixins.size(65px, auto);
+            object-fit: contain;
+        }
+
+        &__reviews {
+            @include mixins.text-style(43px, 500, normal, 50px, -.02em);
+            color: variables.$black-light;
+            font-family: lyon-text, lyon-display, serif;
+            padding: 35px;
+        }
+
+        &__image--forbes {
+            @include mixins.size(70px, auto);
+            @include mixins.position(absolute, auto, auto, 20%, 45%);
+            object-fit: contain;
+            transform: rotate(-1deg);
+        }
+
+    }
+
+    .features {
+        @include mixins.flex-style(column, nowrap, 40px);
+        margin-top: 200px;
+
+        &__title {
+            @include mixins.text-style(61px, 700, normal, 65px, -.02em);
+            color: variables.$black-light;
+        }
+
+        &__container {
+            @include mixins.size(100%, auto);
+            @include mixins.flex-style(row, wrap, 10px);
+            justify-content: space-between;
+        }
+
+        .feature__card {
+            @include mixins.size(20%, auto);
+            @include mixins.flex-style(column, nowrap, 10px);
+
+            & img {
+                @include mixins.size(90px, auto);
+            }
+
+            & video {
+                @include mixins.size(90px, auto);
+            }
+
+            .feature__link {
+                @include mixins.text-style(18px, 600, normal, 24px, -.02em);
+                @include mixins.flex-style(column, nowrap, 5px);
+                text-decoration: none;
+                color: variables.$color-footer-copyright;
+                margin-bottom: 15px;
+
+                & span {
+                    @include mixins.text-style(26px, 700, normal, 29px, -.02em);
+                    color: variables.$black-light;
+                }
+            }
+        }
+    }
+
+    .started {
+        @include mixins.flex-style(row, wrap);
+        margin-top: 200px;
+        justify-content: space-between;
+
+        &__title {
+            @include mixins.text-style(61px, 700, normal, 65px, -.02em);
+            @include mixins.size(100%, auto);
+            color: variables.$black-light;
+            margin-bottom: 50px;
+        }
+
+        &__cards {
+            @include mixins.size(49%, auto);
+            @include mixins.flex-style(column, nowrap, 10px);
+            background-color: variables.$color-card-started;
+            border-radius: 12px;
+            padding: 35px 0 0 40px;
+
+            & h6 {
+                @include mixins.text-style(45px, 600, normal, 50px, -.02em);
+                color: variables.$black-light;
+                margin-bottom: 10px;
+            }
+
+            .started__buttons {
+                @include mixins.flex-style(row, nowrap, 10px);
+                margin-bottom: 45px;
+
+                .startted__button {
+                    @include mixins.text-style(16px, 600, normal, 23px);
+                    @include mixins.radius-cursor(8px, pointer);
+                    padding: 10px 25px 12px 25px;
+                    border: none;
+                    background-color: variables.$primary-color;
+                }
+
+                .startted__button--free {
+                    background-color: variables.$blue;
+                    color: variables.$primary-color;
+                }
+
+                .startted__button--free:hover {
+                    background-color: variables.$hover-blue;
+                }
+
+            }
+
+            .startted__button:hover {
+                background-color: variables.$hover-white;
+            }
+        }
+    }
+
+
+}

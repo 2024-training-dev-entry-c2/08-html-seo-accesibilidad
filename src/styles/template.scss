@@ -1,0 +1,69 @@
+@use './sass/mixins.scss' as mixins;
+@use './sass/variables.scss' as variables;
+@use './sass/herencias.scss';
+
+.template {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+        @include mixins.text-style(61px, 700, normal, 65px, -.02em);
+        @include mixins.size(100%);
+        color: variables.$black-light;
+    }
+
+    &__link {
+        @include mixins.text-style(18px, 500, normal, 24px, -.02em);
+        display: block;
+        color: variables.$color-links;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+
+    &__container {
+        @include mixins.text-style(18px, 700, normal, 24px, -.02em);
+        @include mixins.size(100%);
+        @include mixins.flex-style(row, wrap, 10px);
+        justify-content: space-between;
+        margin-top: 25px;
+
+        .template__principal {
+            @include mixins.size(49%, auto);
+            @include mixins.flex-style(column, nowrap, 10px);
+            background-color: variables.$color-cards;
+            padding: 40px 0 0px 40px;
+            @extend %radius;
+
+            .template__icon {
+                @include mixins.size(60px, auto);
+            }
+
+            .template__images {
+                @include mixins.size(100%, auto);
+                border: 1px solid variables.$color-border-image;
+                margin-top: 30px;
+            }
+
+        }
+
+        .template__content {
+            @include mixins.size(49%, auto);
+            @include mixins.flex-style(row, wrap, 30px);
+            justify-content: space-between;
+
+            .template__card {
+                @include mixins.size(47%, auto);
+                @include mixins.flex-style(column, nowrap, 10px);
+                background-color: variables.$color-cards;
+                @extend %radius;
+                padding: 38px;
+
+                & img {
+                    @include mixins.size(25%, auto);
+                }
+
+            }
+        }
+    }
+
+}

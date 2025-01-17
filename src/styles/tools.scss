@@ -1,0 +1,95 @@
+@use './sass/mixins.scss' as mixins;
+@use './sass/variables.scss' as variables;
+@use './sass/herencias.scss';
+
+.tools {
+    margin-top: 60px;
+    @include mixins.flex-style(row, wrap);
+  
+    .general-tools {
+      @include mixins.size(50%, auto);
+  
+      &__title {
+        @include mixins.text-style(61px, 700, normal, 65px, -.02em);
+        @include mixins.size(80%, auto);
+        color: variables.$black-light;
+      }
+  
+      &__subtitle {
+        @include mixins.text-style(18px, 500, normal, 24px, -.02em);
+        @include mixins.size(85%, auto);
+        color: variables.$color-subtitle;
+        display: block;
+        padding: 10px 0;
+      }
+  
+      &__link {
+        @include mixins.text-style(18px, 500, normal, 24px, -.02em);
+        display: block;
+        color: variables.$color-links;
+        text-decoration: none;
+      }
+    }
+  
+    .tools-interactive {
+      @include mixins.size(50%, auto);
+      display: flex;
+      align-items: flex-end;
+  
+      &__info {
+        @include mixins.flex-style(column, nowrap, 3px);
+      }
+  
+      &__tile {
+        @include mixins.text-style(16px, 700, normal, 23px, -.02em);
+        color: variables.$black-light;
+        margin-top: 10px;
+      }
+  
+      &__description {
+        @include mixins.text-style(16px, 500, normal, 23px, -.02em);
+        color: variables.$color-subtitle;
+      }
+  
+      &__video {
+        @include mixins.size(37%, auto);
+      }
+    }
+  
+    &__multimedia {
+      margin-top: 30px;
+  
+      video {
+        @include mixins.size(100%, auto);
+        border-radius: 10px;
+      }
+    }
+  
+    &__competitors {
+      @include mixins.text-style(16px, 500, normal, 23px);
+      @include mixins.flex-style(row, nowrap, 10px);
+      @extend %centers;
+      color: variables.$color-subtitle;
+      margin-top: 20px;
+      margin-bottom: 100px;
+  
+      & h4 {
+        color: variables.$black-light;
+      }
+  
+      & i {
+        @include mixins.flex-style(row, nowrap, 10px);
+        align-items: center;
+  
+        &__logo {
+          @include mixins.size(30px, 30px);
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  
+  .tools-general-brain {
+    margin: 200px auto;
+  }
+  

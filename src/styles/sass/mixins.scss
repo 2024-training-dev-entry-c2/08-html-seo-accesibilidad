@@ -1,0 +1,36 @@
+@mixin text-style ($font-size, $font-weight, $font-style, $line-height:normal, $letter-spacing:normal) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin radius-cursor ($border-radius, $cursor:default) {
+    border-radius: $border-radius;
+    cursor: $cursor;
+}
+
+@mixin size ($width:auto, $height:auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin position ($position, $top:auto, $right:auto, $bottom:auto, $left:auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin flex-style ($flex-direction, $flex-wrap:nowrap, $gap:0px) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    gap: $gap;
+}
+
+
+
+

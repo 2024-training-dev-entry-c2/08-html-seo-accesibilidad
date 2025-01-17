@@ -1,0 +1,51 @@
+@use './sass/mixins.scss' as mixins;
+@use './sass/variables.scss' as variables;
+@use './sass/herencias.scss';
+
+.services {
+  @include mixins.size(100%, 100%);
+  @include mixins.flex-style(column, nowrap, 20px);
+  margin-top: 35px;
+
+  &__container {
+    @include mixins.size(100%, auto);
+    position: relative;
+
+    .services__image {
+      @include mixins.size(100%, auto);
+      @include mixins.position(absolute, 0, auto, auto, 0);
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out;
+      border-radius: 12px;
+      border: 1px solid variables.$color-border-image;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+  &__container-buttons {
+    @include mixins.position(relative, 83%, auto, auto, auto);
+    @include mixins.flex-style(row, nowrap, 8px);
+    @extend %centers;
+
+    .services__button {
+      @include mixins.text-style(16px, 550, normal, 23px, -.02em);
+      @include mixins.flex-style(row, nowrap, 4px);
+      @extend %buttons;
+
+      .service__icon {
+        @include mixins.size(22px, 22px);
+        object-fit: contain;
+      }
+
+      &:hover {
+        background-color: variables.$hover-header;
+      }
+    }
+  }
+}
+
+.active {
+  z-index: 1;
+}

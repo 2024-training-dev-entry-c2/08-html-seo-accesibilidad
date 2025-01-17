@@ -1,0 +1,22 @@
+@use './variables.scss' as variables;
+
+%buttons {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 5px 14px 6px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    border: 1px solid variables.$color-border;
+    background-color: transparent;
+}
+
+%centers {
+    align-items: center;
+    justify-content: center;
+}
+
+%radius {
+    border-radius: 12px;
+    cursor: pointer;
+}
