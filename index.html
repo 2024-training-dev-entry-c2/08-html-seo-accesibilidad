@@ -33,9 +33,9 @@
 </head>
 
 <body>
-  <header class="duties__header">
-    <nav aria-label="Main navigation" class="duties__nav">
-      <div class="duties__nav-container">
+  <header class="duties__header" aria-labelledby="main-header">
+    <nav aria-label="Main navigation" class="duties__nav" aria-describedby="nav-description" role="navigation">
+      <div class="duties__nav-container" aria-live="polite">
         <a href="#" aria-label="Duties home" class="duties__nav-link">
           <svg viewBox="0 0 24 24" fill="var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37))"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -50,18 +50,18 @@
               fill="var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37))"></path>
           </svg>
         </a>
-        <menu class="duties__menu">
+        <menu class="duties__menu" title="Main menu options">
           <li class="duties__menu-item">
-            <a href="#" class="duties__menu-link scramble-text" data-text="PROJECTS">PROJECTS</a>
+            <a tabindex="1" href="#" class="duties__menu-link scramble-text" data-text="PROJECTS" aria-controls="project-sectio">PROJECTS</a>
           </li>
           <li class="duties__menu-item">
-            <a href="#" class="duties__menu-link scramble-text" data-text="SERVICES">SERVICES</a>
+            <a tabindex="2" href="#" class="duties__menu-link scramble-text" data-text="SERVICES" aria-expanded="false">SERVICES</a>
           </li>
           <li class="duties__menu-item">
-            <a href="#" class="duties__menu-link scramble-text" data-text="VENTURES">VENTURES</a>
+            <a tabindex="3" href="#" class="duties__menu-link scramble-text" data-text="VENTURES" aria-haspopup="false">VENTURES</a>
           </li>
           <li class="duties__menu-item">
-            <a href="#" class="duties__menu-link scramble-text" data-text="CONTACT">CONTACT</a>
+            <a tabindex="4" href="#" class="duties__menu-link scramble-text" data-text="CONTACT" aria-flowto="footer">CONTACT</a>
           </li>
         </menu>
       </div>
@@ -70,9 +70,9 @@
       Building bold brands <br />
       for brave companies
     </h1>
-    <div class="duties__title-separator"></div>
+    <div class="duties__title-separator" aria-hidden="true"></div>
   </header>
-  <main>
+  <main role="main">
     <section class="duties__intro">
       <div class="duties__intro-content">
         <div class="duties__intro-content-wrapper">
@@ -188,7 +188,7 @@
               <path
                 d="M0.390625 4.80817V3.49217H6.03263L4.59062 1.63017L5.44463 0.972168L7.86663 4.13617L5.44463 7.32817L4.59062 6.67017L6.03263 4.80817H0.390625Z"
                 fill="var(--token-d78b08d4-654b-4fe1-9fc3-71529c9fe307, rgb(241, 240, 238))"></path>
-            </svg></div><span class="duties__project-cta-text scramble-text" data-text="VIEW PROJECT">VIEW
+            </svg></div><span class="duties__project-cta-text scramble-text" data-text="VIEW PROJECT" tabindex="5">VIEW
             PROJECT</span>
         </a>
       </div>
@@ -391,7 +391,7 @@
     </section>
     <section class="duties__about">
       <h2 class="duties__about-title">About</h2>
-      <div class="duties__about-content">
+      <div class="duties__about-content" lang="en">
         <p class="duties__about-text">
           We are a team of two senior designers united by a shared passion for
           good design, new technology, and a better way of doing things.
@@ -444,7 +444,7 @@
         </address>
       </section>
 
-      <footer>
+      <footer aria-labelledby="footer-heading">
         <nav class="duties__footer-nav" aria-label="Social media and additional links">
           <ul class="duties__footer-nav-list">
             <li class="duties__footer-nav-item">
