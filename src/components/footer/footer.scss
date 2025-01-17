@@ -1,125 +1,108 @@
-.footer{
-  &__top{
-    display: flex;
-    justify-content: flex-start;
-    padding: 5rem;
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
+.footer {
+  &__top {
+    @include m.flex(row, flex-start);
+    padding: v.$spacing-2xl;
   }
-  &__logo{
-    img{
-      width: 48px;
-      margin-right: 5rem;
+
+  &__logo {
+    img {
+      width: v.$logo-height;
+      margin-right: v.$spacing-2xl;
     }
   }
+
   &__menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    li{
+    @include m.flex(row, flex-end, center);
+
+    li {
       list-style: none;
-      margin-right: 2rem;
-      a{
-        text-decoration: none;
-        color: #000;
-        font-size: 0.7rem;
-        font-weight: 700;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid transparent;
-        transition: all 0.3s ease;
-      }
-      &:hover{
-        a{
-          border-bottom: 2px solid #7386e5;
-          transition: all 0.3s ease;
-        }
+      margin-right: v.$spacing-md;
+
+      a {
+        @include m.menu-link;
+        @include m.hover-border-bottom;
+        padding-bottom: v.$spacing-sm;
       }
     }
   }
-  &__back-to-top{
-    display: flex;
-    align-items: center;
+
+  &__back-to-top {
+    @include m.flex(row, flex-start, center);
     margin-left: 22rem;
-    font-size: 0.7rem;
-    &-text{
+    font-size: v.$font-xs;
+
+    &-text {
       font-weight: 800;
-      color: grey;
+      color: v.$grey-text;
     }
   }
-  &__back-to-top-link{
-    text-decoration: none;
-    color: #7386e5;
-    font-weight: 900;
-    margin-left: 1rem;
-    border: 1px solid #f1f3fa;
-    background: #f1f3fa;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+
+  &__back-to-top-link {
+    @include m.circle-icon;
+    margin-left: v.$spacing-sm;
     line-height: 30px;
-    font-size: 1.5rem;
+    font-size: v.$font-lg;
   }
-  &__contact-info{
-    display: flex;
-    margin-left: 5rem;
+
+  &__contact-info {
+    @include m.flex;
+    margin-left: v.$spacing-2xl;
   }
-  &__contact-item{
-    display: flex;
-    justify-content: flex-start;
-    padding: 2rem 6rem;
-    align-items: center;
+
+  &__contact-item {
+    @include m.flex(row, flex-start, center);
+    @include m.section-padding(v.$spacing-md, v.$spacing-3xl, v.$spacing-md, v.$spacing-3xl);
   }
-  &__icon-wrapper{
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    border: 1px solid #f1f3fa;
-    background: #f1f3fa;
-    border-radius: 50%;
-    text-align: center;
+
+  &__icon-wrapper {
+    @include m.circle-icon;
     line-height: 60px;
-    margin-right: 1rem;
+    margin-right: v.$spacing-sm;
   }
-  svg{
-    color: #7386e5;
+
+  svg {
+    color: v.$primary-color;
   }
 
   &__contact-text {
-    color: #666;
-    font-size: 0.9rem;
+    color: v.$grey-text;
+    font-size: v.$font-base;
     font-weight: 700;
   }
-  &__contact-span{
-    color: #7386e5;
+
+  &__contact-span {
+    color: v.$primary-color;
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
-    padding-bottom: 8rem;
+    @include m.flex(row, space-between, center);
+    @include m.section-padding(v.$spacing-md, v.$spacing-2xl, v.$spacing-4xl, v.$spacing-2xl);
   }
 
   &__copyright {
     &-text {
-      color: #666;
-      font-size: 0.9rem;
+      color: v.$grey-text;
+      font-size: v.$font-base;
       font-weight: 700;
     }
   }
+
   &__copyright-span {
-    color: #000000;
+    color: v.$text-color;
   }
 
   &__privacy-policy {
     display: block;
     margin-top: 0.8rem;
-    color: #666;
-    font-size: 0.8rem;
+    color: v.$grey-text;
+    font-size: v.$font-sm;
     font-weight: 700;
 
     a {
-      color: #7386e5;
+      color: v.$primary-color;
       text-decoration: none;
       
       &:hover {
@@ -129,23 +112,22 @@
   }
 
   &__privacy-span {
-    color: #7386e5;
+    color: v.$primary-color;
   }
 
   &__links {
-    display: flex;
-    gap: 2rem;
+    @include m.flex;
+    gap: v.$spacing-md;
   }
 
   &__link-item {
-    color: #666;
+    color: v.$grey-text;
     font-weight: 800;
-    font-size: 0.9rem;
+    font-size: v.$font-base;
     cursor: pointer;
 
     &:hover {
-      color: #7386e5;
+      color: v.$primary-color;
     }
   }
 }
-

@@ -1,119 +1,84 @@
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
 .header {
-    position: relative;
-    z-index: 1;
-    padding: 1.5rem 0;
-  
-    &__nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 3rem 3rem;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      z-index: 10;
-      background-color: transparent;
-      box-shadow: none;
-      transition: all 0.3s ease;
-    }
-  
-    &__nav.scrolled {
-      padding: 1rem 3rem;
-      background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: v.$spacing-sm 0;
+
+  &__nav {
+    @include m.fixed-nav;
+    @include m.section-padding(v.$spacing-lg, v.$spacing-lg, v.$spacing-lg, v.$spacing-lg);
+    background-color: transparent;
+    box-shadow: none;
+
+    &.scrolled {
+      @include m.section-padding(v.$spacing-sm, v.$spacing-lg, v.$spacing-sm, v.$spacing-lg);
+      background-color: v.$white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
     }
-    
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    &__logo-link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #000;
-    }
-    
-    &__logo-img {
-      height: 48px;
-      margin-right: 0.75rem;
-    }
-    
-    &__logo-text {
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-    
-    &__menu {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-    
-    &__menu-link {
-      text-decoration: none;
-      color: #000;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding-bottom: 1.2rem;
-      border: 3px solid transparent;
-    }
-    
-    &__menu-link:hover {
-      border-bottom: 3px solid #7386e5;
+  }
+
+  &__wrapper {
+    @include m.flex(row, space-between, center);
+  }
+
+  &__logo-link {
+    @include m.flex(row, flex-start, center);
+    text-decoration: none;
+    color: v.$text-color;
+  }
+
+  &__logo-img {
+    height: v.$logo-height;
+    margin-right: v.$spacing-xs;
+  }
+
+  &__logo-text {
+    font-size: v.$font-lg;
+    font-weight: 700;
+  }
+
+  &__menu {
+    @include m.flex;
+    list-style: none;
+    gap: v.$spacing-md;
+  }
+
+  &__menu-link {
+    @include m.menu-link;
+    padding-bottom: 1.2rem;
+    border: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid v.$primary-color;
       padding-bottom: 1.2rem;
       transition: 0.8s ease;
     }
-  
-    &__contact-button {
-    
-      &--light {
-        text-decoration: none;
-        padding: 1rem 2.5rem;
-        border-radius: 50px;
-        font-size: 0.7rem;
-        transition: all 0.3s ease;
-        background-color: #7386e5;
-        color: white;
-        font-weight: 800;
-      }
-      
-      &--light:hover {
-        background-color: #fb3;
-      }
-    }
-  
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem 25rem;
-      font-size: 1.6rem;
-      text-align: center;
-    }
-    &__learn-button {
-    
-      &--dark {
-        text-decoration: none;
-        border-radius: 50px;
-        font-size: 0.75rem;
-        transition: all 0.3s ease;
-        margin-top: 3rem;
-        background-color: #223073;
-        color: white;
-        font-weight: 700;
-        padding: 1.3rem 6rem;
-      }
-      
-      &--dark:hover {
-        background-color: #fb3;
-      }
-    }
-    &__background {
-      margin: auto;
-      width: 750px;
+  }
+
+  &__contact-button {
+    &--light {
+      @include m.light-button;
     }
   }
+
+  &__content {
+    @include m.flex(column, center, center);
+    @include m.section-padding(v.$spacing-md, 25rem, v.$spacing-md, 25rem);
+    font-size: v.$font-xl;
+    text-align: center;
+  }
+
+  &__learn-button {
+    &--dark {
+      @include m.dark-button;
+      margin-top: v.$spacing-lg;
+    }
+  }
+
+  &__background {
+    margin: auto;
+    width: v.$container-width;
+  }
+}
