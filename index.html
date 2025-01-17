@@ -1,271 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sketch puts the focus back on you and your work. Made by designers, for designers.">
-  <meta name="author" content="SofkaU">
-  <meta name="keywords" content="Sketch, Design, UI/UX, prototypes, designers">
-  <meta property="og:title" content="Sketch • Design, prototype, collaborate and handoff">
-  <meta property="og:type" content="website">
-  <meta property="og:description"
-    content="Sketch puts the focus back on you and your work. Made by designers, for designers.">
-  <meta property="og:image" content="./images/canvas@2x.avif">
-  <meta property="og:image:alt"
-    content="Design for car dashboard and km/h options. Design tools such as layers, positions, sizes.">
-  <meta name="twitter:title" content="Sketch • Design, prototype, collaborate and handoff">
-  <meta name="twitter:description"
-    content="Sketch puts the focus back on you and your work. Made by designers, for designers.">
-  <meta name="twitter:image" content="./images/canvas@2x.avif">
-  <meta name="twitter:image:alt"
-    content="Design for car dashboard and km/h options. Design tools such as layers, positions, sizes.">
-  <meta name="twitter:card" content="app">
-  <title>Sketch • Design, prototype, collaborate and handoff</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5e2e7365bbda8d2962233262/0d1ab59c-94c6-4dd9-8c39-45be7a437dbe/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.scss">
+  <title>Taiki Murayama</title>
+  <meta name="description" content="Taiki Murayama - Design Director in Los Angeles. Specializing in brand, art direction, product, and experiential design.">
+  <meta name="keywords" content="Taiki Murayama, Design Director, Los Angeles, Brand, Art Direction, Product Design, Experiential Design">
+  <meta name="author" content="Taiki Murayama">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Taiki Murayama - Design Director">
+  <meta property="og:description" content="Taiki Murayama - Design Director in Los Angeles. Specializing in brand, art direction, product, and experiential design.">
+  <meta property="og:image" content="./images/image5.gif">
+  <meta property="og:url"  content="./images/image5.gif">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Taiki Murayama - Design Director">
+  <meta name="twitter:description" content="Taiki Murayama - Design Director in Los Angeles. Specializing in brand, art direction, product, and experiential design.">
+  <meta name="twitter:image"  content="./images/image5.gif">
+
 </head>
 
 <body>
   <header class="header">
-    <nav>
+    <nav class="header__nav" aria-label="Main Navigation">
       <menu class="menu">
-        <li class="menu__item">
-          <a class="menu__link" tabindex="3" href="#" aria-label="Ir al Home" aria-level="1">
-            <i aria-hidden="true">
-              <svg width='32' height='32' xmlns='http://www.w3.org/2000/svg' color='%23000'>
-                <path
-                  d='m.38 11.986 6.412-8.704a.8.8 0 0 1 .556-.32l8.564-.952a.8.8 0 0 1 .176 0l8.564.951a.8.8 0 0 1 .556.32l6.413 8.705a.8.8 0 0 1-.04.997L16.455 30.475a.6.6 0 0 1-.908 0L.418 12.983a.8.8 0 0 1-.039-.997zm17.826-7.403 6.047 5.712a.4.4 0 0 0 .674-.32l-.29-4.054a.2.2 0 0 1 .392-.07l1.326 4.642a1 1 0 0 0 .645.674l2.83.943a.2.2 0 0 1-.062.39h-2.72a1 1 0 0 0-.843.463l-7.414 11.65a.3.3 0 0 1-.523-.291l5.314-10.96a.6.6 0 0 0-.54-.862H8.958a.6.6 0 0 0-.54.862l5.314 10.96a.3.3 0 0 1-.523.292l-7.414-11.65a1 1 0 0 0-.844-.464H2.148a.2.2 0 0 1-.062-.39l2.908-.945a1 1 0 0 0 .652-.677l1.325-4.637a.2.2 0 0 1 .392.07l-.29 4.054a.4.4 0 0 0 .674.32l6.047-5.712a.2.2 0 0 1 .293.272L10.03 9.848a.4.4 0 0 0 .31.652h11.32a.4.4 0 0 0 .31-.652l-4.057-4.993a.2.2 0 0 1 .293-.272z'
-                  fill='currentcolor' fill-rule='evenodd' />
-              </svg>
-            </i>
+
+        <li class="menu__item menu__item--logo">
+          <a class="menu__link" href="#" aria-label="Ir al Home">
+            <img src="./images/logo.png" alt="Logo de la página" class="menu__logo">
           </a>
         </li>
-        <li class="menu__item">
-          <span>Product</span>
-          <i class="menu__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="main-nav__link__icon">
-              <path fill="none" fill-rule="evenodd" stroke="#00000052" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.5" d="m4 6 4 4 4-4"></path>
-            </svg>
-          </i>
-          <div class="sub-menu">
-            <div></div>
-            <menu>
-              <li><a tabindex="1" href="#">Design</a></li>
-              <li><a tabindex="2" href="#">Collaboration</a></li>
-              <li><a href="#">Prototyping</a></li>
-              <li><a href="#">Developer Handoff</a></li>
-              <li><a href="#">All features</a></li>
-            </menu>
-            <div>
-              <h5>WHAT'S NEW</h5>
-              <menu>
-                <li><a href="#">Sketch in 2024</a></li>
-                <li><a href="#">Smart Animate</a></li>
-                <li><a href="#">Easy Library Swaps</a></li>
-              </menu>
-              <a href="#">See All Updates</a>
-            </div>
-          </div>
-        </li>
-        <li class="menu__item">
-          <span>Explore</span>
-          <i class="menu__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="main-nav__link__icon">
-              <path fill="none" fill-rule="evenodd" stroke="#00000052" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.5" d="m4 6 4 4 4-4"></path>
-            </svg>
-          </i>
-          <div class="sub-menu">
-            <div></div>
-            <menu>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Extension & Plugins</a></li>
-            </menu>
-            <div>
-              <h5>COURSES</h5>
-              <menu>
-                <li><a href="#"></a>Sketch 101</li>
-                <li><a href="#"></a>Sketch 102</li>
-              </menu>
-            </div>
-          </div>
-        </li>
-        <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
-        <li class="menu__item">
-          <span>Support</span>
-          <i class="menu__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="main-nav__link__icon">
-              <path fill="none" fill-rule="evenodd" stroke="#00000052" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.5" d="m4 6 4 4 4-4"></path>
-            </svg>
-          </i>
-          <menu class="sub-menu">
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Community Forum<i>D</i></a></li>
-          </menu>
+
+
+        <li class="menu__item menu__item--links">
+          <ul class="menu__links">
+            <li class="menu__link-item">
+              <a class="menu__link" href="#" aria-label="Ir al Profile">01. Profile</a>
+            </li>
+            <li class="menu__link-item">
+              <a class="menu__link" href="#" aria-label="Ir al Work">02. Work</a>
+            </li>
+            <li class="menu__link-item">
+              <a class="menu__link" href="#" aria-label="Ir al Contact">✻ Contact</a>
+            </li>
+            <li class="menu__link-item">
+              <a class="menu__link" href="#" aria-label="Ir a LinkedIn">✻ LinkedIn</a>
+            </li>
+          </ul>
         </li>
       </menu>
     </nav>
-    <div class="header__actions">
-      <a class="header__link" href="#">Sign In</a>
-      <button class="header__button">
-        <span>Get started</span>
-        <i aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="main-nav__link__icon"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 11-4 4-4-4M12 13.5v-9M4 20h16"></path></g></svg>
-        </i>
-      </button>
-    </div>
   </header>
   <main>
     <section class="hero">
-      <div class="hero__data">
-        <h1 class="hero__title">
-          Designers, welcome home.
+      <div class="hero__content">
+        <h1 class="hero__title">TAIKI MURAYAMA
+          <span class="hero__design">(DESIGN ©2024)</span>
         </h1>
-        <div class="hero__container">
-          <p class="hero__description">Sketch is a toolkit made by designers, for designers, that puts the focus on you and your work.</p>
-          <a class="hero__button" href="#">
-            <span>
-              Get started for free
-              <i aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="main-nav__link__icon"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 11-4 4-4-4M12 13.5v-9M4 20h16"></path></g></svg>
-              </i>
-            </span>
-          </a>
-          <small class="hero__requirements">Requires macOS Ventura (13.0.0) or newer.</small>
-          <!-- <abbr title="Hyper Text Markup Language">HTML</abbr> -->
-        </div>
       </div>
-
-      <article role="banner">
-        <a href="#" class="banner">
-          <video autoplay muted loop playsinline class="banner__video" src="./images/sketch-in-2024.mp4"></video>
-          <div class="banner__container">
-            <h5 class="banner__title">Our favorite features from 2024 — and what’s next</h5>
-            <p>
-              Join us as we highlight our favorite features from 2024 and take a look at what’s ahead. <span> Read the
-                blog post</span>
-            </p>
-          </div>
-        </a>
-      </article>
-
-      <picture>
-        <img src="./images/canvas@2x.avif"
-          alt="Design for car dashboard and km/h options. Design tools such as layers, positions, sizes.">
-      </picture>
+      <img src="./images/image1.gif" alt="Imagen de Apple Watch" title="Imagen de Apple Watch" class="hero__image hero__image--1" role="img" aria-label="Apple Watch">
+      <img src="./images/image2.jpg" alt="Imagen de deportista" title="Imagen de deportista" class="hero__image hero__image--2" role="img" aria-label="Deportista">
+      <img src="./images/image3.jpg" alt="Imagen de modelo" title="Imagen de modelo" class="hero__image hero__image--3" aria-label="Modelo">
+      <img src="./images/image4.gif" alt="Imagen de Smart Watch" title="Imagen de Smart Watch" class="hero__image hero__image--4" aria-label="Smart Watch">
+      <img src="./images/image5.gif" alt="Imagen de oro falso" title="Imagen de oro falso" class="hero__image hero__image--5" aria-label="Oro falso">
+      <img src="./images/image6.jpg" alt="Imagen de pintura" title="Imagen de pintura" class="hero__image hero__image--6" aria-label="Pintura">
+      <img src="./images/image7.gif" alt="Imagen de celular" title="Imagen de celular" class="hero__image hero__image--7" aria-label="Celular">
+      <img src="./images/image8.png" alt="Imagen de auto" title="Imagen de auto" class="hero__image hero__image--8" aria-label="Auto">
+    </section>
+    <section class="experience">
+      <div class="experience__container experience__container--name">
+        <p class="experience__name">
+          Designer & design director in Los Angeles. Brand, art direction, product, and experiential. Currently at
+          Apple.
+        </p>
+      </div>
+      <div class="experience__container experience__container--companies">
+        <p class="experience__companies">
+          AMAZON / APPLE / ASICS / AT&T / AXE / BMW / COINTREAU / CRUISE / DICKIES / DUREX / FX / GRAND MARNIER / H&M /
+          HBO / LACOSE / LEXUS / LINCOLN / MADEWELL / MADISON SQUARE GARDEN / MTV2 / NY RANGERS / PARKER / RED BULL /
+          REFINERY29 / SOUNDCLOUD / TACO BELL / TARGET / TOYOTA / UBER
+        </p>
+      </div>
     </section>
 
-    <section>
-      <div>
-        <article>
-          <i aria-hidden="true">D</i>
-          <main>
-            <p>
-              I owe a tremendous debt of gratitude to Sketch. It is easy and wonderful and graceful enough that I can
-              use it easily in my workflow with Ben. Legitimately a really wonderful utility.
-            </p>
-
-            <div>
-              <div>
-                <img src="./images/Halide@3x.avif" alt="">
-                <div>
-                  <h5>Mark Jardine</h5>
-                  <small>Tapbots</small>
-                </div>
-              </div>
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47"
-                  height="37" viewBox="0 0 47 37" class="testimonial__award__leaves mt">
-                  <defs>
-                    <linearGradient x1="0%" y1="48.463%" x2="97.3%" y2="49.113%" id="b">
-                      <stop stop-color="#32ADF7" offset="0%"></stop>
-                      <stop stop-color="#6F8BFD" offset="16.56%"></stop>
-                      <stop stop-color="#744BD0" offset="31.396%"></stop>
-                      <stop stop-color="#B34AD3" offset="45.261%"></stop>
-                      <stop stop-color="#DC5F9B" offset="62.17%"></stop>
-                      <stop stop-color="#E97F42" offset="78.793%"></stop>
-                      <stop stop-color="#F48C2B" offset="100%"></stop>
-                    </linearGradient>
-                    <path
-                      d="M14.71.002c.016.001.033.013.05.034.046.055.1.172.167.341.05.125.107.28.173.457.162.488.394 1.162.244 1.81l-.017.067c-.169.667-.416 1.196-.754 1.523a1.665 1.665 0 0 1-.34.269c-.152.09-.292.142-.381.157l-.027.004-.022.001-.011.08a148.79 148.79 0 0 0-.037.213l.254-.171.176-.114.009-.006.09-.057c.544-.34 1.044-.607 1.473-.818.252-.117.475-.228.677-.308.2-.083.367-.159.508-.208l.117-.044.087-.033a.87.87 0 0 1 .063-.284 1.17 1.17 0 0 1 .143-.267c.182-.274.514-.508.949-.704l.043-.02c.425-.18.911-.099 1.264-.045.128.025.24.047.331.067.123.026.21.05.253.075.016.01.026.02.029.03.02.053-.03.2-.15.36-.044.06-.097.122-.16.181-.23.23-.59.429-.99.602a1.21 1.21 0 0 1-.045.018c-.388.149-.806.145-1.12.141a8.75 8.75 0 0 1-.248-.012c-.192-.014-.316-.035-.352-.084-.006-.009-.01-.028-.01-.055a22.99 22.99 0 0 0-.202.078c-.14.052-.308.129-.506.214-.2.082-.421.196-.673.315-.44.224-.955.506-1.515.869l.115.023.037.007c.009-.02.02-.04.037-.06.055-.072.166-.174.316-.267.112-.069.245-.133.394-.177.445-.15 1.024-.123 1.687.038l.066.016c.638.17 1.12.691 1.473 1.064.125.142.233.264.32.367.116.14.193.242.22.309.01.025.013.045.007.06-.023.077-.207.2-.482.277-.102.03-.216.052-.339.063-.459.057-1.04-.033-1.643-.19a2.095 2.095 0 0 1-.068-.02c-.569-.173-1.04-.546-1.393-.828-.101-.085-.192-.163-.271-.233-.176-.157-.291-.278-.32-.365l-.05-.008-.148-.02-.032-.005a2.38 2.38 0 0 0-.145.093c-.644.432-1.338.97-2.033 1.626-.178.16-.345.337-.521.513-.09.086-.171.182-.257.274-.086.094-.174.186-.258.284l-.243.284c.029.008.071.016.122.026l.022.005a.358.358 0 0 1 .019-.049c.04-.087.133-.22.268-.353.1-.098.225-.197.37-.278.43-.262 1.041-.371 1.771-.36h.073c.706.026 1.33.456 1.786.761.163.119.304.221.419.308.154.118.26.207.302.27.017.024.024.044.022.062-.006.085-.17.257-.439.403-.1.055-.213.105-.339.146-.466.169-1.093.213-1.76.192-.026 0-.05-.002-.076-.004-.634-.046-1.214-.324-1.648-.535a14.488 14.488 0 0 1-.337-.179c-.244-.135-.4-.241-.431-.33a328.963 328.963 0 0 1-.193-.027c-.07.084-.142.172-.21.262-.082.105-.168.208-.248.317l-.24.33c-.316.447-.626.917-.905 1.42l-.107.189c-.035.063-.067.128-.102.192-.066.13-.135.258-.201.39-.125.265-.256.53-.37.808-.122.272-.223.557-.333.84-.06.182-.125.364-.184.549l-.022.015c.043-.032.1-.066.157-.103l.012-.007-.001-.025c0-.113.032-.299.11-.507.058-.155.14-.321.253-.48.326-.492.918-.914 1.694-1.268l.078-.036c.759-.327 1.63-.186 2.261-.091.231.043.431.08.595.115.22.047.376.088.452.133.03.018.048.035.053.055.036.093-.052.357-.265.646a2.414 2.414 0 0 1-.286.325c-.41.411-1.05.772-1.766 1.085a3.126 3.126 0 0 1-.081.033c-.693.269-1.443.266-2.006.261a17.64 17.64 0 0 1-.443-.02c-.33-.021-.548-.056-.622-.137l.013-.01c-.052.042-.101.08-.142.117l-.104.09a3.34 3.34 0 0 0-.038.132c-.093.293-.163.595-.24.896-.065.304-.136.609-.184.92-.027.154-.055.308-.073.465-.02.156-.043.312-.062.469-.029.315-.062.63-.074.946-.009.158-.018.316-.018.476-.002.16-.006.323-.006.478l.013.478c.003.08.002.159.008.238l.017.239c.035.636.126 1.267.237 1.89a.152.152 0 0 0 .042-.023c.043-.032.1-.065.158-.103.026-.016.052-.034.08-.05a.337.337 0 0 1-.06-.066 1.891 1.891 0 0 1-.254-.568 2.517 2.517 0 0 1-.096-.644c-.035-.709.236-1.542.732-2.444l.05-.09c.499-.862 1.438-1.356 2.112-1.72.254-.125.473-.233.655-.318.245-.115.424-.186.53-.198.04-.005.07 0 .089.014.101.064.203.381.203.813.001.16-.013.335-.045.52-.103.691-.465 1.501-.931 2.319l-.056.09c-.476.76-1.2 1.297-1.745 1.699-.162.113-.31.214-.442.3-.294.194-.513.313-.648.32l-.042.03c-.028.021-.055.044-.081.065-.053.043-.102.08-.143.117l-.08.071.067.332c.014.078.034.154.053.231l.057.23c.07.307.167.606.253.907.383 1.19.887 2.32 1.501 3.338l.114.191.057.095.06.093.241.367.06.091.064.089.126.176.126.176.024.035.009-.042.022-.1c.007-.033.014-.068.023-.102a.573.573 0 0 1-.034-.023 1.878 1.878 0 0 1-.413-.467 2.525 2.525 0 0 1-.284-.588c-.245-.668-.233-1.549-.027-2.563a2.43 2.43 0 0 1 .02-.102c.221-.977.974-1.735 1.512-2.289.205-.196.382-.367.531-.503.201-.184.351-.307.449-.35.037-.017.067-.022.09-.014.116.03.308.303.437.717.048.153.087.325.111.511.108.694.003 1.58-.2 2.505l-.026.103c-.23.872-.762 1.607-1.165 2.157-.122.157-.233.3-.334.422-.242.296-.425.483-.555.512l.001-.012c-.004.036-.004.07-.007.104-.002.068-.008.129-.007.185v.14l-.049-.064c.176.224.346.45.53.66.092.105.179.213.272.314l.278.301c.74.796 1.53 1.458 2.296 2.01.332.237.661.453.983.649l-.001-.03-.004-.054v-.028a.419.419 0 0 1-.072-.024 1.802 1.802 0 0 1-.487-.342 2.415 2.415 0 0 1-.394-.485c-.375-.567-.557-1.39-.588-2.38a2.333 2.333 0 0 1-.002-.1c-.01-.96.525-1.834.904-2.47.148-.228.276-.427.385-.587.147-.217.26-.364.34-.427.032-.024.059-.035.081-.033.115.003.354.215.565.57.079.132.153.284.216.452.253.622.35 1.47.363 2.377l-.001.102c-.023.864-.358 1.668-.612 2.27-.079.174-.151.33-.218.468-.144.295-.263.498-.368.578l.021.092.036.149c.366.216.722.406 1.061.572.342.173.674.31.978.441.31.117.59.233.853.315l.37.123.327.095.282.08c.087.024.17.042.242.06l.444.107-.106.439s-.154-.04-.443-.112c-.073-.02-.153-.037-.243-.063l-.293-.087-.34-.102-.378-.131a5.579 5.579 0 0 1-.22-.077l-.088.003c-.034.002-.068.001-.103.005l-.107.008c-.08.006-.159.015-.232.025l.01.019c.027.135-.128.378-.397.72-.103.132-.224.278-.357.438-.472.538-1.104 1.25-1.942 1.679a3.732 3.732 0 0 1-.1.049c-.896.412-1.775.714-2.505.754a3.062 3.062 0 0 1-.544-.004c-.449-.044-.769-.183-.825-.297-.014-.021-.015-.053-.006-.096.023-.11.115-.293.259-.542.106-.184.24-.404.396-.66.446-.678 1.054-1.623 2-2.065.033-.015.066-.03.1-.043.987-.435 1.88-.64 2.613-.531.244.027.47.09.662.166a1.959 1.959 0 0 1 .59.35c.076-.03.164-.06.253-.089l.023-.005c-.114-.046-.232-.093-.354-.14-.31-.138-.649-.283-.998-.464a15.968 15.968 0 0 1-3.26-2.183h-.013l-.168-.001c-.026.138-.216.337-.517.603-.125.11-.27.232-.43.365-.56.443-1.31 1.027-2.21 1.296l-.107.03c-.956.242-1.874.378-2.6.284a3.035 3.035 0 0 1-.534-.104c-.434-.125-.723-.32-.759-.443-.008-.023-.004-.054.012-.095.043-.105.166-.267.352-.485.138-.162.31-.354.508-.577.56-.585 1.328-1.404 2.338-1.665.035-.01.07-.017.105-.025 1.05-.247 1.965-.285 2.666-.044a2.6 2.6 0 0 1 .62.284c.19.12.34.246.436.35l.032.039.036-.009c-.363-.331-.728-.69-1.083-1.08l-.28-.31c-.094-.105-.182-.216-.274-.325-.185-.216-.357-.448-.534-.68L9.9 27.71l-.063-.09-.127-.18-.127-.182-.063-.091-.06-.094-.242-.378-.032-.05c-.042-.01-.084-.02-.13-.029-.043.131-.236.31-.534.542-.129.1-.277.21-.44.331-.574.4-1.34.925-2.235 1.134-.035.009-.07.016-.105.023-.948.18-1.853.259-2.555.124a2.984 2.984 0 0 1-.516-.133c-.416-.148-.687-.356-.715-.477-.007-.023-.001-.054.017-.093.048-.1.178-.25.372-.453.144-.15.323-.327.53-.533.581-.538 1.378-1.292 2.38-1.487a2.89 2.89 0 0 1 .103-.018c1.039-.18 1.935-.162 2.606.114.225.084.424.197.589.315.223.159.383.327.46.443l.025.04.017.034.06.005-.129-.22a15.915 15.915 0 0 1-1.336-2.938l-.05-.014c-.052-.015-.113-.025-.179-.04l-.036-.007c-.1.1-.333.196-.667.303-.155.05-.332.102-.527.16-.674.176-1.571.406-2.483.293a3.72 3.72 0 0 1-.108-.015c-.95-.159-1.828-.397-2.441-.767a2.997 2.997 0 0 1-.44-.303c-.341-.283-.525-.572-.51-.695 0-.025.017-.051.048-.081.078-.077.251-.174.502-.297.187-.091.415-.197.68-.319.728-.304 1.732-.737 2.74-.575.034.006.069.012.103.02 1.037.19 1.873.516 2.41 1.008.182.156.331.33.446.499.155.226.25.44.283.575.01.04.014.075.014.1l-.005.023c.068-.002.13.002.181.01l-.117-.357c-.084-.306-.18-.611-.247-.925l-.055-.234c-.019-.078-.038-.156-.051-.235l-.092-.474a16.003 16.003 0 0 1-.22-1.922l-.014-.241-.003-.114-.09-.039-.066-.026c-.109.082-.353.13-.703.17-.156.018-.334.035-.53.052-.675.04-1.572.09-2.418-.19a3.547 3.547 0 0 1-.1-.035c-.875-.332-1.665-.725-2.18-1.193a2.905 2.905 0 0 1-.363-.37c-.271-.334-.393-.645-.355-.76.005-.022.025-.044.06-.067.089-.059.272-.118.534-.187.194-.052.43-.109.705-.175.75-.152 1.786-.374 2.714-.028.032.011.064.024.095.037.951.378 1.686.847 2.105 1.416.145.183.254.378.333.56.105.244.155.465.162.6.001.033 0 .06-.003.082a.29.29 0 0 1 .046.012l.051.015-.007-.486c.002-.165.007-.322.01-.483.002-.16.013-.32.024-.482.016-.322.053-.64.086-.959.02-.158.045-.316.067-.474.02-.158.051-.314.08-.47.04-.245.096-.486.15-.726a25.576 25.576 0 0 0-.068-.138c-.023-.05-.054-.103-.086-.163-.134.033-.38-.005-.722-.086a20.248 20.248 0 0 1-.516-.131c-.649-.19-1.51-.45-2.214-1l-.082-.067c-.714-.609-1.327-1.247-1.656-1.863a2.923 2.923 0 0 1-.217-.472c-.145-.407-.156-.74-.082-.835.012-.02.04-.034.08-.044.102-.025.294-.018.564.005.2.017.442.044.722.075.757.112 1.807.254 2.566.895l.077.068c.77.678 1.305 1.369 1.51 2.047.076.222.114.442.127.64a1.9 1.9 0 0 1-.048.62c-.018.06-.038.099-.057.114l.017-.02c.044.064.083.117.111.164l.013.018.006-.029c.082-.303.156-.607.253-.903.086-.299.195-.588.295-.878.114-.284.22-.57.346-.844.117-.278.253-.544.381-.811l.039-.074c-.003 0-.007-.072-.012-.182-.002-.056-.01-.117-.016-.185l-.024.002c-.094.013-.245-.09-.45-.272l-.093-.082c-.097-.09-.205-.193-.323-.308-.395-.405-.917-.946-1.208-1.636a2.084 2.084 0 0 1-.033-.082c-.275-.736-.464-1.452-.455-2.035-.002-.156.01-.302.032-.434.059-.355.184-.602.277-.64l.02-.007h.024l.03.007c.086.024.223.107.41.235.139.095.304.214.496.35.506.393 1.212.927 1.507 1.705l.029.08c.287.81.399 1.533.274 2.11a2.093 2.093 0 0 1-.165.518c-.076.161-.161.29-.234.377l-.04.042.012.057c.014.068.03.132.037.186l.001.012.125-.23.052-.097.11-.188c.287-.504.604-.975.927-1.421l.246-.33c.081-.108.169-.21.252-.315.15-.192.31-.371.466-.55l.008-.172.002-.088.001-.164c-.089-.03-.195-.188-.33-.435-.055-.1-.114-.214-.179-.34-.21-.438-.485-1.022-.532-1.662l-.005-.076c-.021-.673.021-1.307.187-1.777.041-.127.091-.242.145-.342.144-.272.314-.438.4-.444.016-.002.036.005.06.022.063.043.151.149.268.304.086.116.188.258.305.423.304.458.731 1.088.758 1.8l.001.074c.012.736-.096 1.354-.354 1.788-.08.146-.178.272-.275.373a1.33 1.33 0 0 1-.35.272l-.033.014-.027.007.001.011.003.053c.003.069.009.133.008.188v.102l-.016.017c.085-.098.175-.189.262-.282.088-.092.17-.187.261-.273.179-.175.35-.35.53-.51A15.968 15.968 0 0 1 13.69 5c-.009-.001.009-.073.034-.179.013-.05.023-.107.034-.168-.073-.047-.13-.216-.193-.474-.025-.103-.05-.22-.077-.35-.083-.447-.19-1.042-.076-1.63l.015-.07c.145-.612.337-1.173.601-1.555.068-.105.14-.196.214-.273.196-.21.39-.316.468-.3Zm17.27 0c.078-.016.27.09.468.3.072.077.145.168.213.273.264.382.457.943.601 1.555.006.023.01.046.015.07.113.588.007 1.183-.075 1.63-.027.13-.053.247-.078.35-.062.258-.12.427-.193.475.012.06.021.117.034.167l.043.178c.55.387 1.14.85 1.732 1.396.18.159.35.335.53.51.09.086.172.18.26.273.081.087.165.172.245.262v-.038l.001-.061c0-.055.005-.12.008-.188l.003-.053.002-.01a.3.3 0 0 1-.06-.022 1.335 1.335 0 0 1-.35-.272 1.8 1.8 0 0 1-.276-.373c-.258-.434-.365-1.052-.353-1.788v-.073c.027-.713.454-1.343.758-1.801.117-.165.219-.307.306-.423.116-.155.205-.26.267-.304.024-.017.045-.024.061-.022.085.006.255.172.4.444.054.1.103.215.144.342.166.47.208 1.104.187 1.777 0 .025-.003.05-.004.076-.047.64-.323 1.224-.533 1.662-.065.126-.124.24-.178.34-.135.247-.241.404-.33.435v.066c0 .068-.002.13.002.186l.008.173-.046-.053c.17.196.348.39.512.602.084.104.171.207.253.316l.246.329c.322.446.64.917.927 1.42l.11.19.052.095.124.232.002-.013c.007-.054.023-.118.036-.186l.01-.052-.038-.047a1.749 1.749 0 0 1-.234-.377 2.093 2.093 0 0 1-.165-.517c-.124-.578-.013-1.301.275-2.11l.028-.081c.295-.778 1.002-1.312 1.508-1.704.191-.137.357-.256.495-.35.187-.129.324-.212.41-.236.032-.01.058-.01.075 0 .092.038.218.285.277.64.022.132.034.278.031.434.009.583-.18 1.299-.454 2.035l-.034.082c-.29.69-.813 1.231-1.208 1.636-.118.115-.226.218-.323.308-.253.233-.435.369-.543.354l-.023-.009c-.006.075-.015.136-.016.192l-.01.183-.003-.001.04.074c.128.267.263.533.38.811.126.274.232.56.346.844.1.29.209.58.296.878.096.296.17.6.252.903l.006.032.013-.021c.028-.047.068-.1.106-.156l.022.012c-.019-.015-.039-.055-.057-.113a1.903 1.903 0 0 1-.047-.621c.013-.198.05-.418.126-.64.205-.678.74-1.37 1.51-2.047l.077-.068c.76-.64 1.81-.783 2.566-.895.28-.03.523-.058.722-.075.27-.023.462-.03.565-.005.04.01.067.024.08.044.073.095.062.428-.082.835-.054.15-.125.31-.218.472-.329.616-.942 1.254-1.656 1.863a3.626 3.626 0 0 1-.082.067c-.704.55-1.565.81-2.213 1-.19.05-.364.095-.517.131-.342.081-.588.119-.718.079-.035.067-.067.12-.09.17l-.067.138-.046-.202c.068.307.143.615.195.928.03.156.06.312.08.47.022.158.047.316.067.474.033.318.07.637.086.96.01.16.022.322.024.481.003.161.009.318.01.483l-.007.484c.015-.002.033-.007.051-.013a.95.95 0 0 1 .045-.014.553.553 0 0 1-.001-.08c.006-.135.056-.356.162-.6a2.51 2.51 0 0 1 .332-.56c.42-.57 1.154-1.038 2.105-1.416.032-.013.063-.026.095-.037.929-.346 1.965-.124 2.715.028.274.066.511.123.705.175.262.069.444.128.534.187.034.022.054.045.06.068.037.114-.084.425-.356.758-.1.124-.221.25-.362.371-.516.468-1.306.861-2.18 1.193a3.192 3.192 0 0 1-.1.034c-.847.28-1.744.231-2.418.19a20.624 20.624 0 0 1-.53-.05c-.35-.041-.595-.09-.703-.171l-.066.026a171.6 171.6 0 0 0-.09.04c0 .037-.002.075-.004.113l-.014.241a16.003 16.003 0 0 1-.22 1.922l-.09.474c-.015.08-.034.157-.052.235l-.056.234c-.067.314-.163.619-.247.925l-.116.356.077-.008.099-.01.005.016c-.01-.023-.007-.069.009-.13.033-.136.127-.349.282-.575.115-.168.264-.343.447-.5.537-.49 1.372-.817 2.41-1.008l.103-.019c1.007-.162 2.012.271 2.74.575.264.122.493.228.679.319.25.123.424.22.503.297.03.03.046.056.047.08.016.124-.169.413-.51.696a2.978 2.978 0 0 1-.44.303c-.613.37-1.49.608-2.441.767l-.108.015c-.911.113-1.809-.117-2.483-.294-.195-.057-.371-.11-.526-.159-.335-.107-.568-.202-.667-.303l-.131.027-.085.02-.05.013a15.89 15.89 0 0 1-1.336 2.939l-.114.196-.014.024.059-.006.017-.033a.583.583 0 0 1 .025-.04 1.93 1.93 0 0 1 .46-.443c.165-.118.364-.231.59-.315.67-.276 1.566-.294 2.606-.114l.103.018c1.002.195 1.798.949 2.38 1.487.207.206.385.384.53.533.193.203.323.354.37.453.02.039.026.07.018.093-.027.12-.299.33-.715.477a2.996 2.996 0 0 1-.516.133c-.702.135-1.607.056-2.554-.124a3.299 3.299 0 0 1-.106-.023c-.895-.209-1.66-.735-2.234-1.134a22.386 22.386 0 0 1-.44-.331c-.297-.232-.49-.41-.535-.542l-.042.009-.084.02h-.004l-.032.05-.241.378-.06.094-.064.09-.127.182-.126.181-.063.09-.067.087c-.177.231-.348.463-.534.68-.092.108-.18.22-.273.324l-.281.31c-.355.39-.72.75-1.09 1.08l.042.009.034-.039a2.2 2.2 0 0 1 .435-.35c.175-.11.385-.213.62-.284.702-.24 1.617-.203 2.666.044l.105.025c1.01.26 1.777 1.08 2.338 1.665.199.223.37.415.508.577.186.218.31.38.352.485.016.04.02.072.012.095-.035.123-.325.318-.759.443-.16.047-.34.084-.534.104-.725.094-1.644-.042-2.6-.284a3.37 3.37 0 0 1-.106-.03c-.902-.269-1.65-.853-2.211-1.296-.16-.133-.305-.255-.43-.365-.301-.266-.49-.465-.516-.603h-.169l-.012.001a15.97 15.97 0 0 1-3.26 2.183c-.35.181-.688.326-1 .464l-.353.14.023.005c.09.028.178.059.256.088l.023-.023c.105-.096.305-.223.565-.326.192-.076.417-.139.66-.166.734-.108 1.628.096 2.615.53l.099.044c.947.442 1.554 1.387 2 2.065.156.256.29.476.396.66.144.25.236.431.26.542.008.043.007.075-.006.096-.057.114-.377.253-.826.297-.166.016-.35.02-.544.004-.73-.04-1.609-.342-2.505-.754a5.194 5.194 0 0 1-.1-.05c-.838-.428-1.47-1.14-1.941-1.678a21.09 21.09 0 0 1-.358-.438c-.27-.342-.423-.585-.396-.72l.009-.02a4.744 4.744 0 0 0-.338-.032c-.036-.004-.07-.003-.103-.005-.031 0-.06-.002-.089-.003l-.014.005-.205.072-.379.131-.34.102-.293.087c-.09.026-.17.044-.242.063l-.443.112-.107-.439.445-.107c.072-.018.154-.036.241-.06l.282-.08.328-.095.369-.123c.262-.082.544-.198.853-.315.305-.13.636-.268.978-.44.34-.167.695-.357 1.06-.572l-.007.029c.016-.054.028-.113.044-.179.008-.033.017-.066.023-.102-.107-.07-.225-.273-.37-.568a20.504 20.504 0 0 1-.217-.468c-.255-.602-.59-1.406-.612-2.27a3.274 3.274 0 0 1-.002-.102c.014-.906.11-1.755.363-2.377.064-.168.138-.32.216-.451.211-.356.45-.568.565-.57.022-.003.05.008.08.032.082.063.195.21.342.427.109.16.236.359.384.588.38.635.914 1.51.905 2.47l-.003.098c-.03.991-.213 1.814-.588 2.381a2.403 2.403 0 0 1-.394.485 1.802 1.802 0 0 1-.487.342.418.418 0 0 1-.072.024l-.003.081-.003.031c.322-.196.652-.412.984-.65a15.383 15.383 0 0 0 2.296-2.009l.278-.3c.094-.102.18-.21.272-.316.167-.19.323-.394.482-.598v-.137c0-.056-.005-.117-.008-.185l-.006-.104v.009l-.02-.002c-.128-.043-.304-.225-.534-.507a20.14 20.14 0 0 1-.334-.422c-.403-.55-.936-1.285-1.166-2.157l-.025-.103c-.204-.925-.309-1.811-.201-2.505a2.99 2.99 0 0 1 .111-.511c.13-.414.322-.687.438-.717.022-.008.052-.003.09.013.097.044.247.167.448.351.15.136.327.306.532.503.537.554 1.29 1.312 1.51 2.29.008.033.015.067.021.1.206 1.015.218 1.896-.027 2.564a2.525 2.525 0 0 1-.284.588 1.878 1.878 0 0 1-.413.467l-.034.023c.01.034.016.07.024.103.014.068.03.133.039.187l-.01-.047.026-.034.062-.088.126-.176.064-.088.063-.089.06-.09.24-.368.061-.093.057-.095.114-.19a15.835 15.835 0 0 0 1.502-3.34c.086-.3.183-.599.253-.907l.057-.23c.02-.076.038-.152.053-.23l.067-.331-.08-.072c-.042-.038-.091-.074-.143-.117-.027-.02-.053-.044-.082-.064l-.042-.032c-.135-.006-.354-.125-.648-.318-.132-.087-.28-.188-.442-.301-.546-.402-1.269-.94-1.745-1.699a3.655 3.655 0 0 1-.056-.09c-.466-.818-.828-1.628-.93-2.32a2.96 2.96 0 0 1-.046-.519c0-.432.102-.75.203-.813l.023-.011.03-.005.037.002c.106.012.284.083.53.198.182.085.4.193.654.318.674.364 1.614.858 2.112 1.72l.05.09c.496.902.767 1.735.732 2.443a2.532 2.532 0 0 1-.096.645c-.073.257-.174.46-.254.568a.412.412 0 0 1-.06.067c.028.015.054.033.08.05.058.037.115.07.158.102l.04.03c.113-.63.204-1.261.24-1.897l.016-.239c.006-.079.005-.159.008-.238l.013-.478c0-.155-.004-.319-.005-.478 0-.16-.01-.318-.018-.476-.012-.316-.046-.631-.075-.946-.018-.157-.041-.313-.061-.47-.018-.156-.047-.31-.074-.465-.048-.31-.119-.615-.183-.919-.078-.301-.147-.603-.24-.896l-.037-.13-.105-.092c-.041-.038-.09-.075-.143-.117l.011.009-.027.026c-.093.063-.299.093-.592.112-.131.008-.28.014-.444.02-.563.005-1.312.008-2.005-.261a2.712 2.712 0 0 1-.082-.033c-.715-.313-1.356-.674-1.766-1.086a2.439 2.439 0 0 1-.286-.324c-.213-.29-.3-.553-.265-.647.006-.019.024-.036.054-.054.076-.045.23-.086.452-.133.163-.035.363-.072.594-.115.63-.095 1.503-.236 2.262.091l.077.036c.776.354 1.369.776 1.694 1.268.113.159.196.325.253.48.078.208.11.394.11.507l-.002.024.013.008.084.053.052.036c-.06-.185-.124-.368-.185-.55-.11-.283-.211-.568-.333-.84-.113-.277-.245-.543-.37-.809l-.201-.39c-.034-.063-.066-.128-.101-.191l-.107-.188a15.54 15.54 0 0 0-1.146-1.751c-.08-.109-.166-.212-.247-.317a7.174 7.174 0 0 0-.213-.264 6.991 6.991 0 0 1-.192.028l.006-.014c-.019.092-.178.203-.436.345-.098.055-.211.114-.336.18-.435.21-1.014.488-1.65.534l-.074.004c-.667.02-1.295-.023-1.76-.192a2.027 2.027 0 0 1-.34-.146c-.27-.146-.433-.318-.438-.404-.003-.017.004-.037.021-.061.043-.063.148-.152.302-.27.115-.087.256-.189.42-.308.454-.305 1.08-.735 1.786-.76l.072-.001c.73-.011 1.342.098 1.771.36.145.081.27.18.37.278.136.133.228.266.268.353a.34.34 0 0 1 .02.05l.022-.006.123-.024c-.083-.097-.165-.191-.245-.286-.083-.098-.172-.19-.257-.284-.087-.092-.168-.188-.257-.274-.176-.176-.344-.353-.521-.513a15.852 15.852 0 0 0-2.034-1.626l-.146-.097a1.2 1.2 0 0 1-.178.03l-.051.007c-.028.087-.143.208-.32.365-.078.07-.17.148-.27.233-.353.282-.825.655-1.394.829a2.095 2.095 0 0 1-.067.019c-.604.157-1.185.247-1.644.19a1.858 1.858 0 0 1-.339-.063c-.275-.078-.459-.2-.481-.277-.006-.015-.004-.035.007-.06.026-.067.103-.17.22-.309.087-.103.195-.225.32-.367.352-.373.834-.894 1.472-1.064l.066-.016c.663-.16 1.243-.188 1.688-.038.149.044.282.108.393.177.15.093.261.195.317.266.016.022.028.04.034.055l.04-.001.116-.023.217.144a16.394 16.394 0 0 0-1.733-1.013c-.252-.119-.474-.233-.674-.315-.198-.085-.365-.162-.506-.214l-.204-.08v.035l-.008.022c-.036.049-.16.07-.351.084a8.683 8.683 0 0 1-.248.012c-.315.004-.733.008-1.121-.14a1.21 1.21 0 0 1-.045-.02c-.4-.172-.76-.372-.99-.6a1.349 1.349 0 0 1-.16-.181c-.12-.161-.17-.308-.15-.36.004-.011.013-.021.03-.03.042-.026.129-.05.252-.076.091-.02.203-.042.332-.067.352-.054.839-.135 1.263.046l.044.02c.434.195.766.43.949.703.063.089.11.182.142.267a.87.87 0 0 1 .063.284l.087.033.117.044c.141.05.309.125.509.208.201.08.424.191.677.308.5.247 1.097.568 1.748.995l.253.171a37.166 37.166 0 0 1-.022-.125l-.015-.087-.011-.081h-.022a1.234 1.234 0 0 1-.408-.162 1.655 1.655 0 0 1-.34-.269c-.338-.327-.585-.856-.754-1.523a2.64 2.64 0 0 1-.016-.066c-.15-.65.081-1.323.243-1.811.066-.178.123-.332.173-.457.067-.169.121-.286.167-.34.018-.022.034-.034.05-.035Z"
-                      id="a"></path>
-                  </defs>
-                  <g fill="none" fill-rule="evenodd">
-                    <mask id="c" fill="#fff">
-                      <use xlink:href="#a"></use>
-                    </mask>
-                    <use fill-opacity=".48" fill="#000" fill-rule="nonzero" xlink:href="#a"></use>
-                    <path fill="url(#b)" mask="url(#c)" d="M0-3h212v44H0z"></path>
-                  </g>
-                </svg>
-                <div>
-                  <h5>Apple Design Award</h5>
-                  <small>2024 Winner</small>
+    <section class="works">
+      <div class="works__resume">
+        <a href="https://static1.squarespace.com/static/5e2e7365bbda8d2962233262/t/64da6352cfe73e7cb44221e4/1692033876958/Taiki-Murayama-2023-Resume.pdf" target="_blank" class="works__resume works__resume--link">✻ View resume</a>
+      </div>
+      <article class="works__content">
+        <h3 class="works__name">APPLE</h3>
+        <div class="works__details">
+          <small class="works__date">(2023+)</small>
+          <p class="works__type">PD&M DESIGN</p>
+        </div>
+      </article>
+      
+      <article class="works__content">
+        <h3 class="works__name">AMAZON</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2021 --- 2023)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">A. DESIGN DIRECTOR</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
                 </div>
               </div>
             </div>
-          </main>
-        </article>
-      </div>
-      <div>
-        <i aria-hidden="true">D</i>
-        <i aria-hidden="true">D</i>
-      </div>
-    </section>
-    <section>
-      <strong>DESIGN</strong>
-      <h2>
-        Design without distractions
-      </h2>
-      <div>
-        <p>
-          Focused tools, an intuitive interface, and an infinite Canvas. Zero distractions. We made our macOS editor for
-          you and your ideas. Not for PMs, developers or clients.
-        </p>
-        <button>Designing in Sketch</button>
-      </div>
-      <div class="bento">
-        <article class="bento__item" style="grid-column: 1 / 7;">
-          <h4>Work with focus (or friends)</h4>
-          <p>Design in private and by yourself. Or co-edit in real-time. The choice is always yours.</p>
-          <!-- VIDEO -->
-        </article>
-        <article class="bento__item" style="grid-column: 7 / 10;">
-          <h4>Every point perfect</h4>
-          <p>Create anything from icons to entire apps with a vector editor like no other.</p>
-          <!-- VIDEO -->
-        </article>
-        <article class="bento__item" style="grid-column: 10 / 13;">
-          <h4>Zero to done</h4>
-          <p>Get started fast with 100s of free templates, Artboard presets and component Libraries.</p>
-          <!-- VIDEO -->
-        </article>
-
-        <article class="bento__item" style="grid-column: 1 / 4;">
-          <h4>Offline? Any time</h4>
-          <p>Disconnect and design without compromises. Work locally, without internet, on your terms.</p>
-          <!-- VIDEO -->
-        </article>
-        <article class="bento__item" style="grid-column: 4 / 7;">
-          <h4>Work effortlessly</h4>
-          <p>Easy multi-layer renaming, a Canvas Minimap and Command Bar put your workflow on rails.</p>
-          <!-- VIDEO -->
-        </article>
-        <article class="bento__item" style="grid-column: 7 / 13;">
-          <h4>Ready to scale</h4>
-          <p>Reuse elements across your designs. Update once and watch your changes roll out everywhere.</p>
-          <!-- VIDEO -->
-        </article>
-      </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Brand building all new to world hardware and features for fitness brand Amazon Halo.
+              Leading creative development of projects across marketing, product and content studio.
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">CRUISE</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2019 — 2021)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">BRAND DESIGN LEAD</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Developed brand visuals and language to prepare Cruise self-driving cars for market. Partnered with product and marketing to test and implement brand vision. 
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">UBER</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2018 — 2019)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">DESIGN LEAD</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Lead rebrand of Uber Freight and art directed brand photoshoots & videos. Collaborated with global design team to update identity and build new website. Directed agencies & partners to produce content and events.
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">APPLE*</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2016 — 2018)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">ART DIRECTOR</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Contracted with interactive design team [*via Critical Mass] to design new user experience for .com retail. Designed a singular user account destination. Created videos and interactive experiences for MacBook Pro, iPhone, and Apple Watch. 
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">SOUNDCLOUD</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2014 — 2016)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">SENIOR DESIGNER</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Created brand & product integrations for SoundCloud Go, with UXR & product. Created media partnership campaigns. Designed website & assets for advertising, On SoundCloud program, and creator genre onboarding.
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">BMF MEDIA</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2013 — 2014)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">DESIGNER</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Designed 10 year anniversary rebrand. Designed environment and collateral for custom & platform events. Worked closely with clients like Toyota, Dockers, H&M, AT&T and Dickies.
+            </p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="works__content">
+        <h3 class="works__name">TH PRODN.</h3>
+        <div class="works__details">
+          <button class="works__toggle" aria-label="Abrir descripcion">
+            <em class="works__date">(2012 — 2013)</em>
+            <div class="works__details-wrapper">
+              <small class="works__type">DESIGNER</small>
+              <div class="works__icon works__icon--container" data-is-open="false" aria-hidden="true">
+                <div class="plus">
+                  <div class="plus__vertical-line"></div>
+                  <div class="plus__horizontal-line"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="works__extra-info" data-is-open="false">
+            <p class="works__extra-text">
+              Concepted and rendered builds for large scale client activations. Worked with clients and vendors to produce all graphic and fabricated assets. Art directed on-site event production and oversaw employer re-brand.
+            </p>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
-  <footer>
+
+  <footer class="footer">
+    <div class="footer__container">
+
+        <a href="https://i.giphy.com/media/5xaOcLSiHjl31yG4ZNK/giphy.webp"  class="footer__ico">
+          ✻
+        </a>
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <p class="footer__text">
+            Taiki Murayama<br>Design Director<br>Los Angeles</p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__text">Email<br><a href="#" class="footer__color">taiki(@)murayama.io</a></p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__text"><a href="#" class="footer__color">LinkedIn<br>@t.o.mura</a></p>
+        </div>
+      </div>
+      </div>
   </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script src="/src/script.ts" type="module"></script>
 </body>
 
 </html>
