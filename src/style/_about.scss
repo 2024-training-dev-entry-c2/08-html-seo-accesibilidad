@@ -4,7 +4,7 @@
     @include grid-template(repeat(8, 1fr));
     padding: $padding-x;
     display: grid;
-    grid-template-columns: 1fr 1.1fr 2.3fr;
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 2%;
     font-family: $font-family-secondary;
     padding-block: 180px;
@@ -37,7 +37,7 @@
       color: $color-background;
       background-color: $color-primary;
       border-radius: 3px;
-      padding: 6px 12px;
+      padding: 4px 12px;
       white-space: nowrap;
       border: none;
       position: relative;

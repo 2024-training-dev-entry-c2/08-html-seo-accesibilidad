@@ -1,6 +1,6 @@
 .duties {
   &__footer {
-    padding: $padding-x;
+    padding-inline: $padding-x;
     font-family: "PP Neue Montreal Mono Medium", monospace;
     font-feature-settings: "ss08", "ss07";
     font-size: 1.6rem;
@@ -36,10 +36,10 @@
     }
 
     &-content {
-      @include flex-center(row, space-between);
+      @include flex-center(row, space-between, flex-start);
       width: 100%;
-      margin-bottom: 25px;
-      padding: $padding-x;
+      margin-bottom: 32px;
+      padding-inline: 4px;
       height: 112px;
     }
 
@@ -87,8 +87,7 @@
     &-nav {
       &-list {
         list-style: none;
-        display: flex;
-        flex-direction: column;
+        @include flex-center(column, flex-start, flex-start);
       }
 
       &-item {
