@@ -63,17 +63,13 @@
     &-figures-project {
       gap: 15px;
       width: 100%;
+      cursor: url("/public/cursor.svg"), context-menu;
 
       > img {
         width: 100%;
         border-radius: $border-radius;
         object-fit: cover;
         height: 100%;
-        cursor: url("/cursor.svg"), auto;
-      }
-
-      &:hover {
-        cursor: url("/cursor.svg"), auto;
       }
     }
 
