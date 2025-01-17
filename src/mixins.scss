@@ -1,0 +1,78 @@
+// _mixins.scss
+@use 'variables' as v;
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button-base {
+  text-decoration: none;
+  border-radius: v.$border-radius-full;
+  font-size: v.$font-xs;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+@mixin dark-button {
+  @include button-base;
+  background-color: v.$secondary-color;
+  color: v.$white;
+  padding: 1.3rem v.$spacing-3xl;
+  
+  &:hover {
+    background-color: v.$accent-color;
+  }
+}
+
+@mixin light-button {
+  @include button-base;
+  background-color: v.$primary-color;
+  color: v.$white;
+  padding: v.$spacing-sm 2.5rem;
+  
+  &:hover {
+    background-color: v.$accent-color;
+  }
+}
+
+@mixin circle-icon {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border: 1px solid v.$light-bg;
+  background: v.$light-bg;
+  border-radius: v.$border-radius-circle;
+  text-align: center;
+}
+
+@mixin menu-link {
+  text-decoration: none;
+  color: v.$text-color;
+  font-size: v.$font-xs;
+  font-weight: 700;
+}
+
+@mixin hover-border-bottom($color: v.$primary-color, $width: 2px) {
+  border-bottom: $width solid transparent;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-bottom: $width solid $color;
+  }
+}
+
+@mixin section-padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s ease;
+}

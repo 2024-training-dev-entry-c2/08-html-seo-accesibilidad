@@ -1,0 +1,133 @@
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
+.footer {
+  &__top {
+    @include m.flex(row, flex-start);
+    padding: v.$spacing-2xl;
+  }
+
+  &__logo {
+    img {
+      width: v.$logo-height;
+      margin-right: v.$spacing-2xl;
+    }
+  }
+
+  &__menu {
+    @include m.flex(row, flex-end, center);
+
+    li {
+      list-style: none;
+      margin-right: v.$spacing-md;
+
+      a {
+        @include m.menu-link;
+        @include m.hover-border-bottom;
+        padding-bottom: v.$spacing-sm;
+      }
+    }
+  }
+
+  &__back-to-top {
+    @include m.flex(row, flex-start, center);
+    margin-left: 22rem;
+    font-size: v.$font-xs;
+
+    &-text {
+      font-weight: 800;
+      color: v.$grey-text;
+    }
+  }
+
+  &__back-to-top-link {
+    @include m.circle-icon;
+    margin-left: v.$spacing-sm;
+    line-height: 30px;
+    font-size: v.$font-lg;
+  }
+
+  &__contact-info {
+    @include m.flex;
+    margin-left: v.$spacing-2xl;
+  }
+
+  &__contact-item {
+    @include m.flex(row, flex-start, center);
+    @include m.section-padding(v.$spacing-md, v.$spacing-3xl, v.$spacing-md, v.$spacing-3xl);
+  }
+
+  &__icon-wrapper {
+    @include m.circle-icon;
+    line-height: 60px;
+    margin-right: v.$spacing-sm;
+  }
+
+  svg {
+    color: v.$primary-color;
+  }
+
+  &__contact-text {
+    color: v.$grey-text;
+    font-size: v.$font-base;
+    font-weight: 700;
+  }
+
+  &__contact-span {
+    color: v.$primary-color;
+  }
+
+  &__bottom {
+    @include m.flex(row, space-between, center);
+    @include m.section-padding(v.$spacing-md, v.$spacing-2xl, v.$spacing-4xl, v.$spacing-2xl);
+  }
+
+  &__copyright {
+    &-text {
+      color: v.$grey-text;
+      font-size: v.$font-base;
+      font-weight: 700;
+    }
+  }
+
+  &__copyright-span {
+    color: v.$text-color;
+  }
+
+  &__privacy-policy {
+    display: block;
+    margin-top: 0.8rem;
+    color: v.$grey-text;
+    font-size: v.$font-sm;
+    font-weight: 700;
+
+    a {
+      color: v.$primary-color;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__privacy-span {
+    color: v.$primary-color;
+  }
+
+  &__links {
+    @include m.flex;
+    gap: v.$spacing-md;
+  }
+
+  &__link-item {
+    color: v.$grey-text;
+    font-weight: 800;
+    font-size: v.$font-base;
+    cursor: pointer;
+
+    &:hover {
+      color: v.$primary-color;
+    }
+  }
+}

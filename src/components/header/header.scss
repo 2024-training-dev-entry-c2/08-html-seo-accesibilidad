@@ -1,0 +1,84 @@
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding: v.$spacing-sm 0;
+
+  &__nav {
+    @include m.fixed-nav;
+    @include m.section-padding(v.$spacing-lg, v.$spacing-lg, v.$spacing-lg, v.$spacing-lg);
+    background-color: transparent;
+    box-shadow: none;
+
+    &.scrolled {
+      @include m.section-padding(v.$spacing-sm, v.$spacing-lg, v.$spacing-sm, v.$spacing-lg);
+      background-color: v.$white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__wrapper {
+    @include m.flex(row, space-between, center);
+  }
+
+  &__logo-link {
+    @include m.flex(row, flex-start, center);
+    text-decoration: none;
+    color: v.$text-color;
+  }
+
+  &__logo-img {
+    height: v.$logo-height;
+    margin-right: v.$spacing-xs;
+  }
+
+  &__logo-text {
+    font-size: v.$font-lg;
+    font-weight: 700;
+  }
+
+  &__menu {
+    @include m.flex;
+    list-style: none;
+    gap: v.$spacing-md;
+  }
+
+  &__menu-link {
+    @include m.menu-link;
+    padding-bottom: 1.2rem;
+    border: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid v.$primary-color;
+      padding-bottom: 1.2rem;
+      transition: 0.8s ease;
+    }
+  }
+
+  &__contact-button {
+    &--light {
+      @include m.light-button;
+    }
+  }
+
+  &__content {
+    @include m.flex(column, center, center);
+    @include m.section-padding(v.$spacing-md, 25rem, v.$spacing-md, 25rem);
+    font-size: v.$font-xl;
+    text-align: center;
+  }
+
+  &__learn-button {
+    &--dark {
+      @include m.dark-button;
+      margin-top: v.$spacing-lg;
+    }
+  }
+
+  &__background {
+    margin: auto;
+    width: v.$container-width;
+  }
+}

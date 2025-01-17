@@ -1,0 +1,35 @@
+@use './components/header/header.scss';
+@use './components/main/main.scss';
+@use './components/footer/footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  padding-top: 150px;
+}
+
+.polygon__center-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 0;
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
