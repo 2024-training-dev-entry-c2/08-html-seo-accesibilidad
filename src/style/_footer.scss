@@ -38,9 +38,8 @@
     &-content {
       @include flex-center(row, space-between, flex-start);
       width: 100%;
-      margin-bottom: 32px;
+      margin-bottom: 25px;
       padding-inline: 4px;
-      height: 112px;
     }
 
     &-address {
@@ -93,8 +92,8 @@
       &-item {
         position: relative;
         display: inline-block;
-        margin-right: 16px;
         overflow: hidden;
+        height: 19px;
       }
 
       &-link {
