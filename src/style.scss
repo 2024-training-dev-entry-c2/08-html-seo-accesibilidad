@@ -1,0 +1,211 @@
+@use "./reset.scss";
+@use "./variables.scss" as variables;
+
+.header {
+  @include variables.container-column();
+  padding-top: 260px;
+  background-color: variables.$color-header;
+
+  &__title-container {
+    @include variables.container-column();
+    color: variables.$color-font;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    @include variables.font(68px);
+    text-align: center;
+  }
+
+  &__aroha-image {
+    width: 60%;
+    height: auto;
+  }
+
+  &__netiquette-image {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 992px) {
+      width: 70%;
+    }
+  }
+}
+
+.main {
+  background-color: variables.$color-background;
+}
+
+.accordion-header__image {
+  width: 100%;
+  height: auto;
+}
+
+.accordion {
+  @include variables.container();
+  padding-top: 46px;
+  padding-bottom: 100px;
+
+  &__list {
+    width: 94%;
+
+    @media (min-width: 992px) {
+      width: 70%;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid variables.$color-font;
+  }
+
+  &__title {
+    @include variables.container(space-between);
+    @include variables.font(36px);
+    color: variables.$color-font;
+    background-color: variables.$color-background;
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+    cursor: pointer;
+    align-items: start;
+
+    @media (min-width: 992px) {
+      font-size: 66px;
+      width: 95.7%;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+
+    @media (min-width: 992px) {
+      margin-top: 24px;
+    }
+
+    &--plus {
+      display: block;
+    }
+
+    &--minus {
+      display: none;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+
+    p {
+      margin: 15px 0;
+      font-size: 32px;
+      line-height: 1.5;
+      color: variables.$color-font;
+    }
+  }
+
+  .active &__icon {
+    &--plus {
+      display: none;
+    }
+
+    &--minus {
+      display: block;
+    }
+  }
+}
+
+.banner {
+  @include variables.container-column();
+  padding-bottom: 200px;
+  padding-top: 200px;
+
+  &__container {
+    width: 90%;
+
+    @media (min-width: 992px) {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    @include variables.font(42px);
+    width: 100%;
+    padding-bottom: 200px;
+
+    @media (min-width: 992px) {
+      width: 60%;
+      font-size: 60px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article {
+  @include variables.container();
+
+  &__container {
+    width: 90%;
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+
+  &__title {
+    @include variables.font(32px, 600);
+    padding-bottom: 20px;
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$color-link;
+  }
+}
+
+.footer {
+  background-color: variables.$color-background;
+  padding-top: 210px;
+
+  &__container {
+    @include variables.container(end);
+    flex-wrap: wrap;
+    width: 92%;
+
+    @media (min-width: 992px) {
+      margin-bottom: 196px;
+      width: 81.5%;
+    }
+  }
+
+  &__links {
+    @include variables.container-column(start);
+    @include variables.font(12px, 500);
+    width: 200px;
+    font-family: "Segoe UI";
+    letter-spacing: 2px;
+    margin-top: 40px;
+
+    a {
+      color: variables.$color-font;
+    }
+  }
+}
