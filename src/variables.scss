@@ -1,0 +1,11 @@
+$primary-gray:#6e6d7a;
+$primary-black:#383938;
+$primary-blue: #5141b1;
+$hover-gray:#f5f6f9; 
+
+@mixin container($display, $direction:row, $justify:start, $gap: 0) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    gap: $gap;
+}
