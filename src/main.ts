@@ -77,12 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  function getRotation(element: SVGElement): number {
-    const style = window.getComputedStyle(element);
-    const matrix = new DOMMatrixReadOnly(style.transform);
-    return Math.round(Math.atan2(matrix.m21, matrix.m11) * (180 / Math.PI));
-  }
-
   function partialScrambleText(text: string | null): string {
     if (!text) return "";
     const scrambleStartIndex = Math.floor(text.length * 0.3);

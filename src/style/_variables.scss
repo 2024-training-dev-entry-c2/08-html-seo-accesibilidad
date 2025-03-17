@@ -25,22 +25,3 @@ $gap-medium: 60px;
 $gap-small: 10px;
 
 $border-radius: 5px;
-
-@mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  gap: $gap;
-}
-
-@mixin grid-template($columns: 1fr, $rows: auto) {
-  display: grid;
-  grid-template-columns: $columns;
-  grid-template-rows: $rows;
-  padding-inline: $padding-x;
-}
-
-@mixin responsive-font-size($min-size, $max-size) {
-  font-size: clamp($min-size, 1vw + $min-size, $max-size);
-}
