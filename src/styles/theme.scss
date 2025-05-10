@@ -1,0 +1,129 @@
+@use 'mixin.scss' as mixin;
+@use 'variables.scss' as variables;
+
+* {
+  @include mixin.theme(variables.$gray-90, variables.$white);
+}
+
+@media (prefers-color-scheme: light) {
+  * {
+    @include mixin.theme(variables.$white, variables.$black);
+  }
+
+  .left {
+    &__alert {
+      h4 {
+        color: variables.$orange !important;
+      }
+
+      span {
+        color: variables.$white !important;
+        background-color: variables.$orange !important;
+      }
+    }
+
+    &__action span {
+      color: variables.$white !important;
+    }
+
+    &__phrase {
+      span:nth-child(1) {
+        color: variables.$gray-70 !important;
+      }
+
+      span:nth-child(2) {
+        color: variables.$gray-50 !important;
+      }
+
+      &:hover {
+        span:nth-child(1) {
+          color: variables.$gray-90 !important;
+        }
+      }
+    }
+  }
+
+  .right {
+    background: none !important;
+
+    .article {
+      background-color: variables.$gray-10 !important;
+
+      &__icon {
+        path {
+          color: variables.$white !important;
+        }
+
+        &--arrow {
+          background-color: variables.$white !important;
+
+          svg {
+            background-color: variables.$white !important;
+
+            path {
+              color: variables.$black !important;
+            }
+          }
+        }
+      }
+
+      &__title {
+        background: none !important;
+        color: variables.$black !important;
+      }
+
+      picture {
+        background: none !important;
+
+        img {
+          background-color: transparent !important;
+        }
+      }
+
+      &__navigation {
+        span {
+          background-color: variables.$white !important;
+          color: variables.$black !important;
+        }
+
+        &:hover {
+          background-color: variables.$gray-40 !important;
+        }
+      }
+
+      &__action {
+        background-color: variables.$gray-80 !important;
+        span, path {
+          color: variables.$white !important;
+        }
+
+        &:hover {
+          background-color: variables.$gray-70 !important;
+        }
+      }
+    }
+  }
+
+  .footer {
+    a {
+      color: variables.$gray-50 !important;
+    }
+
+    a:hover,
+    path:hover {
+      color: variables.$gray-70 !important;
+    }
+  }
+
+  .modal {
+    background-color: variables.$modal-bg-lg !important;
+
+    &__content, &__logo {
+      background-color: variables.$white !important;
+    }
+
+    &__content {
+      box-shadow: variables.$shadow-modal-lg !important;
+    }
+  }
+}
