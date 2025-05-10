@@ -1,0 +1,25 @@
+$color-background: #efefef;
+$color-primary: #0071e3;
+$color-secondary: #0f1012;
+$color-accent: #ffffff1a;
+$color-border: #0006;
+$color-hover: rgba(0, 113, 227, 0.5);
+$color-text-light: #020201;
+$color-background-light: #0c0d0f0d;
+$fontFamily-principal:'PP Neue Montreal Thin', 'sans-serif';
+$fontFamily-secondary:'PP Neue Montreal';
+
+@mixin container($justify: start) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+@mixin container-gap($gap: 0) {
+  @include container;
+  gap: $gap;
+}
+
+@function calc-percentage($total-columns, $column-span) {
+  @return calc(100% / $total-columns * $column-span);
+}
