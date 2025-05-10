@@ -1,0 +1,45 @@
+$color-primary: #252525;
+$color-background: rgb(241, 240, 238);
+$background-color-about: rgb(241, 240, 238);
+$color-nav: rgba(194, 194, 191, 0.7);
+$indicator-color: rgb(9, 205, 9);
+$scope-color: rgb(238, 238, 238);
+$color-hover: rgb(53, 0, 246);
+
+$padding-x: 12px;
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+$font-family-primary: "AS Therma Bold Condensed";
+$font-family-secondary: "PP Neue Montreal Mono Medium", sans-serif;
+
+$font-size-large: 5.3rem;
+$font-size-medium: 1.8rem;
+$font-size-small: clamp(14px, 13.4253px + 0.153257vw, 16px);
+
+$gap-large: 200px;
+$gap-medium: 60px;
+$gap-small: 10px;
+
+$border-radius: 5px;
+@mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin grid-template($columns: 1fr, $rows: auto) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  padding-inline: $padding-x;
+}
+
+@mixin responsive-font-size($min-size, $max-size) {
+  font-size: clamp($min-size, 1vw + $min-size, $max-size);
+}

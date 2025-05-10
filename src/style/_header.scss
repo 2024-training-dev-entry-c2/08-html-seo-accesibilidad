@@ -1,0 +1,105 @@
+.duties {
+  &__header {
+    padding: $padding-x;
+  }
+
+  &__title {
+    font-family: "AS Therma Bold Condensed";
+    font-size: clamp(75px, 33.3333px + 11.1111vw, 220px);
+    letter-spacing: -0.0675em;
+    line-height: 80%;
+    color: #000;
+    &-separator {
+      height: clamp(280px, 245.517px + 9.1954vw, 400px);
+      user-select: none;
+    }
+  }
+
+  &__nav {
+    z-index: 10;
+    font-family: "PP Neue Montreal Mono Medium";
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      cursor: pointer;
+      padding: 14px 20px;
+      width: 33%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-nav;
+      backdrop-filter: blur(32px);
+      border-radius: 1.6rem;
+    }
+
+    &-link {
+      text-decoration: none;
+
+      &:hover svg {
+        animation: spin 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+      }
+
+      &:hover svg.stop-spin {
+        animation: spin-reverse 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+      }
+
+      svg {
+        width: 24px;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 20px;
+
+    &-item {
+      list-style: none;
+      flex: 0 0 auto;
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color-primary;
+        z-index: -1;
+        transform: translateX(-150%);
+        transition: transform 0.2s ease-in-out;
+        pointer-events: none;
+      }
+
+      &:hover::after {
+        transform: translateX(0);
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-primary;
+      position: relative;
+      z-index: 1;
+      transition: color 0.4s ease-in-out;
+
+      &:hover {
+        color: $color-background;
+      }
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
